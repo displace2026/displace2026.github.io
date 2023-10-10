@@ -96,7 +96,7 @@ function showHide(shID) {
 
 <hr><b>
 <left> 
-<h1><u>DISPLACE CORPUS OVERVIEW</u></h1>
+<h3><u>DISPLACE CORPUS OVERVIEW</u></h3>
 </left>
 </b><hr>
 
@@ -105,16 +105,19 @@ The DISPLACE corpus is a collection of informal conversations, with each convers
 <hr>
 <left>
 
-<h3>Audio Specifications </h3>
+<h3><u>AUDIO SPECIFICATIONS</u></h3>
 </left>
+<hr>
 The recordings are single-channel wav files sampled at 16 kHz. Close-talking recordings were time-synchronized with far-field audio and normalized to [-1, 1] amplitude range.
 <br><br>
 <left>
 <hr>
-<h3>Recording Setup </h3>
+<h3><u>RECORDING SETUP</u></h3>
+
 
        
 </left>  
+<hr>
 Each participant was given a lapel microphone to wear, while a shared far-field desktop microphone was positioned at the center of the table. Close-talking audio was recorded using lapel microphones connected to either an audio recorder or an Android phone. Far-field recordings were captured through either an omnidirectional or unidirectional microphone and stored in a laptop using Audacity software. Speakers were positioned in a circular or semi-circular arrangement, maintaining a distance of either 45 cm or 85 cm from the microphone. Close-talking speech was recorded for annotation purposes, while far-field audio data was used for the development and evaluation of the systems.
 <br><br>
 
@@ -126,12 +129,12 @@ Each participant was given a lapel microphone to wear, while a shared far-field 
 
 <left>
 
-   <h3>IISc Recording Setup</h3>
+   <h5>IISc Recording Setup</h5>
 </left>
    The close-talking audio was recorded using a lapel microphone3 connected to an audio recorder4 . Settings of all the audio recorders were kept the same across all the conversations. Far-field recordings at the IISc were conducted using an omnidirectional microphone5 with a circular sitting arrangement (refer Figure 1 (a)).
 <left>
    <br><br>
-   <h3>NITK Recording Setup</h3>
+   <h5>NITK RECORDING SETUP</h5>
 
 </left>
 
@@ -139,27 +142,28 @@ The close-talking audio recordings were captured using lapel microphones connect
 <br><br>
 <hr>
 <left>
-   <h3>Call for participation</h3>
+   <h3><u>CALL FOR PARTICIPATION</u></h3>
 </left>
 
 To ensure maximum participation from both IISc and NITK, we displayed posters8 in various public locations like departments and hostels, food-courts, and also shared them across different online platforms. The interested candidates were asked to fill a Google Form9 . This form aimed to gather important information about each candidate, including details like age, gender, educational background, native place (place of origin), native language (mother tongue), languages they are proficient in, and their English proficiency. Additionally, we included a section in the form to inquire about their availability and preferred time slots to facilitate the scheduling of their recording sessions. Based on the Google form responses, participants for a recording were selected by considering their common known languages and their availability time-slots. The selected candidates were contacted to finalize the recording schedule.
 <br><br>
 <hr>
 <left>
-   <h3>Guidelines</h3>
+   <h3><u>GUIDELINES</u></h3>
 </left>
+<hr>
 In order to ensure the consistency and quality of the recorded data, a set of comprehensive guidelines were established. These instructions cover a wide range of factors related to the data collection process, encompassing seating arrangements, standard procedures, and guidance for the participants.
 <br><br>
-<hr>
+
 <left>
-   <h3>Sitting Arrangement</h3>
+   <h5>SITTING ARRANGEMENT</h5>
 </left>
 1. Participants were seated in a semi-circular or circular fashion to facilitate natural and inclusive conversations.<br>
 2. A distance of roughly 45-60 cm was maintained between each participant and the far-field microphone, ensuring consistent audio capture.<br>
 3. A minimum distance of 45 centimeters was maintained between any two speakers to ensure the target speaker’s speech is much louder in the close-talking recording than the neighboring participants, which helps in the annotation process especially during the speaker overlap cases.<br><br>
-<hr>
+
 <left>
-   <h3>Instructions for Participants</h3>
+   <h5>INSTRUCTIONS FOR PARTICIPANTS</h5>
 
 </left>
 To ensure the privacy and quality of the recorded conversations, participants were provided with
@@ -176,9 +180,9 @@ explicit instructions:<br>
 10. The final recording session commenced once all technical and procedural checks were complete, ensuring the data’s integrity and completeness. <br>
 11. Towards the end of the time slot, participants were prompted to wrap up their conversation.<br>
 12. After completing the recording, participants must handover the audio recorder (or Android phone) to the recording moderator.<br><br>
-<hr>
+
 <left>
-   <h3>General Guidelines </h3>
+   <h5>GENERAL GUIDELINES </h5>
 </left>
 1. Participants were directed to commence recording immediately upon receiving a command, and synchronization was facilitated by the meeting moderators through visual cues provided via placards.<br>
 2. Participants were actively encouraged to engage in code-switching between languages during their conversations, enriching the dataset with linguistic diversity. When needed, participants were prompted to incorporate code-switching.<br>
@@ -190,8 +194,9 @@ explicit instructions:<br>
 These comprehensive guidelines were meticulously followed during the data collection process to ensure the reliability and richness of the DISPLACE-2023 dataset.<br><br>
 <hr>
 <left>
-   <h3>Speaker IDs Explained</h3>
+   <h3><u>SPEAKER IDs EXPLAINED</u></h3>
 </left>
+<hr>
 A unique speaker ID with the following format is assigned to individual speaker.<br>
 < Gender >_< Recording Location >_< Native Language >_< Unique Identifier ><br><br>
 • Gender: The first field denotes gender of the speaker. It must be either M (for males) or F (for females).<br>
@@ -200,15 +205,17 @@ A unique speaker ID with the following format is assigned to individual speaker.
 Examples: M B Hi 0001 and M M Ka 0001<br><br>
 <hr>
 <left>
-<h3>Recording File IDs Explained</h3>
+<h3><u>RECORDING FILE IDs EXPLAINED</u></h3>
 </left>
+<hr>
 
 A unique file ID is assigned to individual close-talking and far-field recordings.<br><br>
-<hr>
+
 <left>
-   <h3>Far-field Recording ID</h3>
+   <h5>FAR-FIELD RECORDING ID</h5>
 </left>
-< Date(Y Y Y Y MMDD) >_< Time(HHMM) >_< sessionID >_< OmniUniID >_< SpokenLanguages> .wav<br><br>
+
+< Date(YYYYMMDD) >_< Time(HHMM) >_< sessionID >_< OmniUniID >_< SpokenLanguages> .wav<br><br>
 • Date(YYYYMMDD): The first field signifies the date on which recording was conducted. The date format is year (YYYY), month (MM) and date (DD).<br>
 • Time(HHMM): This field denotes the time at which a recording starts. The 24 hour time format is followed with hour(HH) and minutes (MM) sub-fields.<br>
 • sessionID: A unique session ID is assigned to individual conversation with the format: < Location >< T hreeDigitNum >. Here, recording site location is represented by Location filed. It can take either ’B’ (for Bengaluru) or ’M’ (for Mangalore) values. A three digit number is used to assign a unique tag to individual recording session. Example: B001, M016, B032, etc.<br>
@@ -216,12 +223,12 @@ A unique file ID is assigned to individual close-talking and far-field recording
 • Spoken Languages: The final field indicates the languages spoken by all the speakers during the conversation. For instance, if S1 spoke Malayalam and English, and S2 used Malayalam, Hindi and English, then the spoken language field should contain ’MaHiEn’ value.<br><br>
 Example:
 Omnidirectional Microphone File: 20221011 1545 B001 OD En.wav<br><br>
-<hr>
+
 <left>
-   <h3>Close-talking File ID</h3>
+   <h5>CLOSE-TALKING FILE ID</h5>
 </left>
 
-< Date(Y Y Y Y MMDD) > < T ime(HHMM) > < SessionID > < RelativeSpeakerID > < SpokenLanguages > .wav<br><br>
+< Date(YYYYMMDD) > < T ime(HHMM) > < SessionID > < RelativeSpeakerID > < SpokenLanguages > .wav<br><br>
 • Date(YYYYMMDD): Same format as used in the far-field recording ID.<br>
 • Time(HHMM): Same format as used in the far-field recording ID.<br>
 • Session ID: Same format as used in the far-field recording ID.<br>
@@ -233,8 +240,9 @@ Close talking Mic2: 20221011 1545 B001 S2 En.wav<br>
 Close talking Mic3: 20221011 1545 B001 S3 En.wav<br><br>
 <hr>
 <left>
-   <h3>Data Management</h3>
+   <h3><u>DATA MANAGEMENT</u></h3>
 </left>
+<hr>
 
 Upon concluding the recording session, all the close-talking audio and far-field data are systematically renamed according to the aforementioned naming conventions and stored in a centralized location. The close-talking recordings are time-aligned with the far-field audio, resampled to 16 kHz, and normalized within the range of [−1, 1]. Additionally, a readme file is created for each conversation, and an example readme file is presented in Figure below. The worn microphone speech was recorded for annotation purposes (for ease of human listening to determine the speech, speaker and language boundaries). All the system development and evaluation is carried out using the far-field microphone recordings. <br><br>
 <center>        <div class="img">
