@@ -1,292 +1,307 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-   <style>
-        /* Define the styles for the back button */
-        .back-button {
-            padding: 10px 20px;
-            background-color: #0074d9;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+<!--[if lt IE 8 ]>
+<html class="no-js ie ie7" lang="en">
+   <![endif]-->
+   <!--[if IE 8 ]>
+   <html class="no-js ie ie8" lang="en">
+      <![endif]-->
+      <!--[if (gte IE 8)|!(IE)]><!-->
+      <html class="no-js" lang="en">
+         <!--<![endif]-->
+         <head>
+            <style>
+               /* Define the styles for the back button */
+               .back-button {
+               padding: 10px 20px;
+               background-color: #0074d9;
+               color: #fff;
+               border: none;
+               cursor: pointer;
+               transition: background-color 0.3s ease;
+               }
+               /* Change the background color when hovering over the button */
+               .back-button:hover {
+               background-color: #0056b3;
+               }
+               /* Change the background color when the button is clicked */
+               .back-button:active {
+               background-color: #003d80;
+               }
+            </style>
+            <!--- Basic Page Needs
+               ================================================== -->
+            <meta charset="utf-8">
+            <title>DISPLACE Challenge</title>
+            <meta name="description" content="">
+            <meta name="author" content="">
+            <!-- Mobile Specific Metas
+               ================================================== -->
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <!-- CSS
+               ================================================== -->
+            <link rel="stylesheet" href="css/default.css">
+            <link rel="stylesheet" href="css/layout.css">
+            <link rel="stylesheet" href="css/media-queries.css">
+            <link rel="stylesheet" href="css/magnific-popup.css">
+            <!-- Script
+               ================================================== -->
+            <script src="js/modernizr.js"></script>
+            <!-- Favicons
+               ================================================== -->
+            <link rel="shortcut icon" href="favicon.ico" >
+            <!-- to add click to know more-->
+            <script language="javascript" type="text/javascript">
+               function showHide(shID) {
+                  if (document.getElementById(shID)) {
+                     if (document.getElementById(shID+'-show').style.display != 'none') {
+                        document.getElementById(shID+'-show').style.display = 'none';
+                        document.getElementById(shID).style.display = 'block';
+                     }
+                     else {
+                        document.getElementById(shID+'-show').style.display = 'inline';
+                        document.getElementById(shID).style.display = 'none';
+                     }
+                  }
+               }
+            </script>
+         </head>
+         <body>
+            <header id="home">
+               <nav id="nav-wrap">
+                  <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                  <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                  <ul id="nav" class="nav">
+                     <li class="current"><a href=index.html>Home</a></li>
+                     <li class="current"><a class="smoothscroll" href="#corpus-overview">Corpus Overview</a></li>
+                     <li class="current"><a class="smoothscroll" href="#audio-specifications">AUDIO SPECIFICATIONS</a></li>
+                     <li class="current"><a class="smoothscroll" href="#recording-setup">RECORDING SETUP</a></li>
+                     <li class="current"><a class="smoothscroll" href="#call-for-participation">CALL FOR PARTICIPATION</a></li>
+                     <li class="current"><a class="smoothscroll" href="#guidelines">GUIDELINES</a></li>
+                     <li class="current"><a class="smoothscroll" href="#speaker-ids-explained">SPEAKER IDs EXPLAINED</a></li>
+                     <li class="current"><a class="smoothscroll" href="#recording-file-ids-explained">RECORDING FILE IDs EXPLAINED</a></li>
+                     <li class="current"><a class="smoothscroll" href="#data-management">DATA MANAGEMENT</a></li>
+                  </ul>
+                  <!-- end #nav -->
+               </nav>
+            </header>
+            
+            
+               <section id="corpus-overview" style="padding: 40px; background: #fff;">
+                  <hr>
+                  <b>
+                     <left>
+                        <h3><u>DISPLACE CORPUS OVERVIEW</u></h3>
+                     </left>
+                  </b>
+                  <hr>
+               <div class="justified" style="text-align: justify;">
+               The DISPLACE corpus is a collection of informal conversations, with each conversation lasting between 30 to 60 minutes and involving a group of 3 to 5 participants. In order to participate in the data collection process, individuals were required to provide some meta-information such as their age, gender, education level, native place, mother tongue, languages known, and proficiency in English. Participants selected for data recording were required to have proficiency in at least one Indian language (L1) and English, with an Indian accent. The selection of participants for each conversation was based on their familiarity with Indian languages, and the discussion topics were agreed upon collectively. The topic of conversation was chosen among a diverse set of choices like climate change, culture, politics, sports, entertainment, and more. Prior to each recording session, participants provided written consent and underwent a briefing on the recording guidelines and process. Participants were also compensated monetarily for their time. The DISPLACE corpus comprises roughly 32 hours of conversational data obtained from two academic institutions: <a href="http://leap.ee.iisc.ac.in/">IISc</a> and <a href="https://www.nitk.ac.in/">NITK</a>, with the majority of participants being students and staff from these institutions.
+               </div>
+               <br><br>
+               <hr>
+               </section>
+               <section id="audio-specifications" style="padding: 40px; background: #fff;">
+               <left>
+                  <h3><u>AUDIO SPECIFICATIONS</u></h3>
+               </left>
+               <hr>
+               <div class="justified" style="text-align: justify;">
+               The recordings are single-channel wav files sampled at 16 kHz. Close-talking recordings were time-synchronized with far-field audio and normalized to [-1, 1] amplitude range.
+               </div>
+               <br><br>
+               </section>
+               <section id="recording-setup" style="padding: 40px; background: #fff;">
+               <left>
+                  <hr>
+                  
+                  <h3><u>RECORDING SETUP</u></h3>
+                  
+               </left>
+               <hr>
+               <div class="justified" style="text-align: justify;">
+               Each participant was given a lapel microphone to wear, while a shared far-field desktop microphone was positioned at the center of the table. Close-talking audio was recorded using lapel microphones connected to either an audio recorder or an Android phone. Far-field recordings were captured through either an omnidirectional or unidirectional microphone and stored in a laptop using Audacity software. Speakers were positioned in a circular or semi-circular arrangement, maintaining a distance of either 45 cm or 85 cm from the microphone. Close-talking speech was recorded for annotation purposes, while far-field audio data was used for the development and evaluation of the systems.
+               </div>
+               <br><br>
+               
+               <center>
+                  <div class="img">
+                     <img src="images/RECORDING.png" class="img-responsive" alt="Recording Setup"  width="1000" height="450" >
+                  </div>
+               </center>
+               <br><br> 
+               <left>
+                  <h5>IISc Recording Setup</h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               The close-talking audio was recorded using a lapel microphone3 connected to an audio recorder4 . Settings of all the audio recorders were kept the same across all the conversations. Far-field recordings at the IISc were conducted using an omnidirectional microphone5 with a circular sitting arrangement (refer Figure 1 (a)).
+               </div>
+               <left>
+                  <br><br>
+                  <h5>NITK RECORDING SETUP</h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               The close-talking audio recordings were captured using lapel microphones connected to Android phones. The lapel microphone used at NITK was identical to that used at IISc. All Android phones had the audio recorder app named ASR 6 installed to capture the closed-channel data. Some consistent ASR app settings were applied to all the recordings, including a sampling rate of 16000 Hz, stereo recording turned off, noise cancellation enabled, and the recording format set to WAV. In contrast to the setup at IISc, a unidirectional far-field microphone7 was used in conjunction with a semi-circular seating arrangement at the NITK site.  At both recording locations, speakers were positioned at roughly equal distances, ranging from 45 to 60 cm, from each other and the far-field microphone. All recordings consist of single-channel data. The far-field recordings were saved on a laptop using Audacity software, configured with a sampling rate of 16000 Hz and mono-channel settings.
+               </div>
+               <br><br>
+               </section>
 
-        /* Change the background color when hovering over the button */
-        .back-button:hover {
-            background-color: #0056b3;
-        }
+               <section id="call-for-participation" style="padding: 40px; background: #fff;">
+               <hr>
+               <left>
+                  <h3><u>CALL FOR PARTICIPATION</u></h3>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               To ensure maximum participation from both IISc and NITK, we displayed posters8 in various public locations like departments and hostels, food-courts, and also shared them across different online platforms. The interested candidates were asked to fill a Google Form9 . This form aimed to gather important information about each candidate, including details like age, gender, educational background, native place (place of origin), native language (mother tongue), languages they are proficient in, and their English proficiency. Additionally, we included a section in the form to inquire about their availability and preferred time slots to facilitate the scheduling of their recording sessions. Based on the Google form responses, participants for a recording were selected by considering their common known languages and their availability time-slots. The selected candidates were contacted to finalize the recording schedule.
+               </div>
+               <br><br>
+               </section>
 
-        /* Change the background color when the button is clicked */
-        .back-button:active {
-            background-color: #003d80;
-        }
-    </style>
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>DISPLACE Challenge</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" >
-
-
-    
-
-<!-- to add click to know more-->
-<script language="javascript" type="text/javascript">
-function showHide(shID) {
-   if (document.getElementById(shID)) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID).style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID).style.display = 'none';
-      }
-   }
-}
-</script>
-
-
-</head>
-
-<body>
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-         <ul id="nav" class="nav">
-            <li class="current"><a href=index.html>Home</a></li>
-            <li class="current"><a class="smoothscroll" href="#Overview">Corpus Overview</a></li>            
-         </ul> <!-- end #nav -->
-
-      </nav> 
- </header>     
-   <section id="Overview" style="padding: 10px 0 12px; background: #fff;">
-      
-<div class="row add-bottom">
-
-         <div class="twelve columns">
-
-  <div class="container" style="text-align: justify;">
-
-<hr><b>
-<left> 
-<h3><u>DISPLACE CORPUS OVERVIEW</u></h3>
-</left>
-</b><hr>
-
-The DISPLACE corpus is a collection of informal conversations, with each conversation lasting between 30 to 60 minutes and involving a group of 3 to 5 participants. In order to participate in the data collection process, individuals were required to provide some meta-information such as their age, gender, education level, native place, mother tongue, languages known, and proficiency in English. Participants selected for data recording were required to have proficiency in at least one Indian language (L1) and English, with an Indian accent. The selection of participants for each conversation was based on their familiarity with Indian languages, and the discussion topics were agreed upon collectively. The topic of conversation was chosen among a diverse set of choices like climate change, culture, politics, sports, entertainment, and more. Prior to each recording session, participants provided written consent and underwent a briefing on the recording guidelines and process. Participants were also compensated monetarily for their time. The DISPLACE corpus comprises roughly 32 hours of conversational data obtained from two academic institutions: <a href="http://leap.ee.iisc.ac.in/">IISc</a> and <a href="https://www.nitk.ac.in/">NITK</a>, with the majority of participants being students and staff from these institutions.
-<br><br>
-<hr>
-<left>
-
-<h3><u>AUDIO SPECIFICATIONS</u></h3>
-</left>
-<hr>
-The recordings are single-channel wav files sampled at 16 kHz. Close-talking recordings were time-synchronized with far-field audio and normalized to [-1, 1] amplitude range.
-<br><br>
-<left>
-<hr>
-<h3><u>RECORDING SETUP</u></h3>
-
-
-       
-</left>  
-<hr>
-Each participant was given a lapel microphone to wear, while a shared far-field desktop microphone was positioned at the center of the table. Close-talking audio was recorded using lapel microphones connected to either an audio recorder or an Android phone. Far-field recordings were captured through either an omnidirectional or unidirectional microphone and stored in a laptop using Audacity software. Speakers were positioned in a circular or semi-circular arrangement, maintaining a distance of either 45 cm or 85 cm from the microphone. Close-talking speech was recorded for annotation purposes, while far-field audio data was used for the development and evaluation of the systems.
-<br><br>
-
-<center>        <div class="img">
-          <img src="images/RECORDING.png" class="img-responsive" alt="Recording Setup"  width="1000" height="450" >
-        </div>
-</center> 
-<br><br> 
-
-<left>
-
-   <h5>IISc Recording Setup</h5>
-</left>
-   The close-talking audio was recorded using a lapel microphone3 connected to an audio recorder4 . Settings of all the audio recorders were kept the same across all the conversations. Far-field recordings at the IISc were conducted using an omnidirectional microphone5 with a circular sitting arrangement (refer Figure 1 (a)).
-<left>
-   <br><br>
-   <h5>NITK RECORDING SETUP</h5>
-
-</left>
-
-The close-talking audio recordings were captured using lapel microphones connected to Android phones. The lapel microphone used at NITK was identical to that used at IISc. All Android phones had the audio recorder app named ASR 6 installed to capture the closed-channel data. Some consistent ASR app settings were applied to all the recordings, including a sampling rate of 16000 Hz, stereo recording turned off, noise cancellation enabled, and the recording format set to WAV. In contrast to the setup at IISc, a unidirectional far-field microphone7 was used in conjunction with a semi-circular seating arrangement at the NITK site.  At both recording locations, speakers were positioned at roughly equal distances, ranging from 45 to 60 cm, from each other and the far-field microphone. All recordings consist of single-channel data. The far-field recordings were saved on a laptop using Audacity software, configured with a sampling rate of 16000 Hz and mono-channel settings.
-<br><br>
-<hr>
-<left>
-   <h3><u>CALL FOR PARTICIPATION</u></h3>
-</left>
-
-To ensure maximum participation from both IISc and NITK, we displayed posters8 in various public locations like departments and hostels, food-courts, and also shared them across different online platforms. The interested candidates were asked to fill a Google Form9 . This form aimed to gather important information about each candidate, including details like age, gender, educational background, native place (place of origin), native language (mother tongue), languages they are proficient in, and their English proficiency. Additionally, we included a section in the form to inquire about their availability and preferred time slots to facilitate the scheduling of their recording sessions. Based on the Google form responses, participants for a recording were selected by considering their common known languages and their availability time-slots. The selected candidates were contacted to finalize the recording schedule.
-<br><br>
-<hr>
-<left>
-   <h3><u>GUIDELINES</u></h3>
-</left>
-<hr>
-In order to ensure the consistency and quality of the recorded data, a set of comprehensive guidelines were established. These instructions cover a wide range of factors related to the data collection process, encompassing seating arrangements, standard procedures, and guidance for the participants.
-<br><br>
-
-<left>
-   <h5>SITTING ARRANGEMENT</h5>
-</left>
-1. Participants were seated in a semi-circular or circular fashion to facilitate natural and inclusive conversations.<br>
-2. A distance of roughly 45-60 cm was maintained between each participant and the far-field microphone, ensuring consistent audio capture.<br>
-3. A minimum distance of 45 centimeters was maintained between any two speakers to ensure the target speaker’s speech is much louder in the close-talking recording than the neighboring participants, which helps in the annotation process especially during the speaker overlap cases.<br><br>
-
-<left>
-   <h5>INSTRUCTIONS FOR PARTICIPANTS</h5>
-
-</left>
-To ensure the privacy and quality of the recorded conversations, participants were provided with
-explicit instructions:<br>
-1. Participants were instructed to refrain themselves from discussing private entities such as corporations or organizations during their conversations. Personal information, including date of birth and phone numbers, was strictly prohibited from being mentioned during the recordings.<br>
-2. Participants were encouraged to converse in both their native language and English, fostering multilingual conversation.<br>
-3. Participants were cautioned not to make any alteration to the recording device settings to avoid unintentional disruptions.<br>
-4. The lapel microphone was to remain attached to the participant’s collar throughout the entire recording, ensuring consistent audio quality.<br>
-5. Android phones (used for recordings) were to be set to airplane mode or ”Do Not Disturb” mode, with internet connectivity turned off, to minimize external disturbances. <br>
-6. All participants and recording moderators were instructed to switch their mobile phones to silent or airplane mode to prevent any interruptions during the recording process.<br>
-7. The conversation topic was collaboratively chosen by the participants to ensure that everyone could engage actively in the discussion.<br>
-8. Before initiating the recording, participants were required to complete a consent form, confirming their willingness to contribute to the dataset and acknowledging receipt of monetary compensation for their involvement.<br>
-9. A brief 10-second audio check was performed to ensure each participant’s comprehension of the process and verify the recording quality.<br>
-10. The final recording session commenced once all technical and procedural checks were complete, ensuring the data’s integrity and completeness. <br>
-11. Towards the end of the time slot, participants were prompted to wrap up their conversation.<br>
-12. After completing the recording, participants must handover the audio recorder (or Android phone) to the recording moderator.<br><br>
-
-<left>
-   <h5>GENERAL GUIDELINES </h5>
-</left>
-1. Participants were directed to commence recording immediately upon receiving a command, and synchronization was facilitated by the meeting moderators through visual cues provided via placards.<br>
-2. Participants were actively encouraged to engage in code-switching between languages during their conversations, enriching the dataset with linguistic diversity. When needed, participants were prompted to incorporate code-switching.<br>
-3. Lapel microphones were placed in close proximity to the collar area, and participants were cautioned not to touch or adjust the microphones during recording to avoid any potential audio disruptions.<br>
-4. Participants were strongly discouraged from exiting the recording session prematurely to maintain data continuity.<br>
-5. The recording sessions began with a synchronized countdown, and participants were required to press the recording button on their Audio recorder (or ASR app) simultaneously, as guided by the moderators. Simultaneously, one of the recording moderators initiated the far-field recording using the Audacity record option. <br>
-6. Participants were encouraged to maintain a comfortable posture during the recording.<br>
-7. A variety of session compositions were recorded, including all-male, all-female, and mixedgender conversations, enhancing the dataset’s diversity. In mixed-gender conversations, female speakers were strategically positioned in-between male speakers to ease the annotation process.<br><br>
-These comprehensive guidelines were meticulously followed during the data collection process to ensure the reliability and richness of the DISPLACE-2023 dataset.<br><br>
-<hr>
-<left>
-   <h3><u>SPEAKER IDs EXPLAINED</u></h3>
-</left>
-<hr>
-A unique speaker ID with the following format is assigned to individual speaker.<br>
-< Gender >_< Recording Location >_< Native Language >_< Unique Identifier ><br><br>
-• Gender: The first field denotes gender of the speaker. It must be either M (for males) or F (for females).<br>
-• Native Language: The third field signifies the speaker’s native language, and we utilized the first two letters of the native language name as a symbolic representation. Some of the language codes employed were as follows: <br>
-• Unique Identifier: The final field indicates a four-digit number, which serves as a unique identifier assigned to each speaker, beginning with sequential numbering starting at one (i.e., starting from 0001).<br><br>
-Examples: M B Hi 0001 and M M Ka 0001<br><br>
-<hr>
-<left>
-<h3><u>RECORDING FILE IDs EXPLAINED</u></h3>
-</left>
-<hr>
-
-A unique file ID is assigned to individual close-talking and far-field recordings.<br><br>
-
-<left>
-   <h5>FAR-FIELD RECORDING ID</h5>
-</left>
-
-< Date(YYYYMMDD) >_< Time(HHMM) >_< sessionID >_< OmniUniID >_< SpokenLanguages> .wav<br><br>
-• Date(YYYYMMDD): The first field signifies the date on which recording was conducted. The date format is year (YYYY), month (MM) and date (DD).<br>
-• Time(HHMM): This field denotes the time at which a recording starts. The 24 hour time format is followed with hour(HH) and minutes (MM) sub-fields.<br>
-• sessionID: A unique session ID is assigned to individual conversation with the format: < Location >< T hreeDigitNum >. Here, recording site location is represented by Location filed. It can take either ’B’ (for Bengaluru) or ’M’ (for Mangalore) values. A three digit number is used to assign a unique tag to individual recording session. Example: B001, M016, B032, etc.<br>
-• OmniUniID: A tag used to denote whether far-field audio is recorded using either omnidirectional (OD) or single-directional (SD) microphone. <br>
-• Spoken Languages: The final field indicates the languages spoken by all the speakers during the conversation. For instance, if S1 spoke Malayalam and English, and S2 used Malayalam, Hindi and English, then the spoken language field should contain ’MaHiEn’ value.<br><br>
-Example:
-Omnidirectional Microphone File: 20221011 1545 B001 OD En.wav<br><br>
-
-<left>
-   <h5>CLOSE-TALKING FILE ID</h5>
-</left>
-
-< Date(YYYYMMDD) > < T ime(HHMM) > < SessionID > < RelativeSpeakerID > < SpokenLanguages > .wav<br><br>
-• Date(YYYYMMDD): Same format as used in the far-field recording ID.<br>
-• Time(HHMM): Same format as used in the far-field recording ID.<br>
-• Session ID: Same format as used in the far-field recording ID.<br>
-• Relative Speaker ID: A relative speaker identification is allocated to each speaker based on their speaking sequence within the conversation. For instance, the speaker who begins the conversation is designated with the label S1. The recording moderators should attentively observe the initial minutes of the conversation to document the order in which the speakers participate. <br>
-• Spoken Languages: The final field indicates the languages spoken by the speaker during the conversation. For instance, if S1 spoke Malayalam and English, the spoken language field should contain either an ’MaEn’ or ’EnMa’ entry. Including information about the spoken languages in the file names greatly aids the annotation process. <br><br>
-Examples:<br>
-Close talking Mic1: 20221011 1545 B001 S1 En.wav<br>
-Close talking Mic2: 20221011 1545 B001 S2 En.wav<br>
-Close talking Mic3: 20221011 1545 B001 S3 En.wav<br><br>
-<hr>
-<left>
-   <h3><u>DATA MANAGEMENT</u></h3>
-</left>
-<hr>
-
-Upon concluding the recording session, all the close-talking audio and far-field data are systematically renamed according to the aforementioned naming conventions and stored in a centralized location. The close-talking recordings are time-aligned with the far-field audio, resampled to 16 kHz, and normalized within the range of [−1, 1]. Additionally, a readme file is created for each conversation, and an example readme file is presented in Figure below. The worn microphone speech was recorded for annotation purposes (for ease of human listening to determine the speech, speaker and language boundaries). All the system development and evaluation is carried out using the far-field microphone recordings. <br><br>
-<center>        <div class="img">
-          <img src="images/ReadMe.png" class="img-responsive" alt="Recording Setup"  width="900" height="650" >
-        </div>
-</center> 
-<br><br> 
-
-</div></div>
-</section>
-    <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-
-
-            <ul class="copyright">
-               <li>&copy; Copyright DISPLACE Challenge</li>
-            </ul>
-
-         </div>
-
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/doubletaptogo.js"></script>
-   <script src="js/spin.js"></script>
-
-   <script src="js/init.js"></script>
-
-</body>
-
-</html>
+               <section id="guidelines" style="padding: 40px; background: #fff;">
+               <hr>
+               <left>
+                  <h3><u>GUIDELINES</u></h3>
+               </left>
+               <hr>
+               <div class="justified" style="text-align: justify;">
+               In order to ensure the consistency and quality of the recorded data, a set of comprehensive guidelines were established. These instructions cover a wide range of factors related to the data collection process, encompassing seating arrangements, standard procedures, and guidance for the participants.
+               </div>
+               <br><br>
+               
+               <left>
+                  <h5>SITTING ARRANGEMENT</h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               1. Participants were seated in a semi-circular or circular fashion to facilitate natural and inclusive conversations.<br>
+               2. A distance of roughly 45-60 cm was maintained between each participant and the far-field microphone, ensuring consistent audio capture.<br>
+               3. A minimum distance of 45 centimeters was maintained between any two speakers to ensure the target speaker’s speech is much louder in the close-talking recording than the neighboring participants, which helps in the annotation process especially during the speaker overlap cases.<br><br>
+               </div>
+               <left>
+                  <h5>INSTRUCTIONS FOR PARTICIPANTS</h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               To ensure the privacy and quality of the recorded conversations, participants were provided with
+               explicit instructions:<br>
+               1. Participants were instructed to refrain themselves from discussing private entities such as corporations or organizations during their conversations. Personal information, including date of birth and phone numbers, was strictly prohibited from being mentioned during the recordings.<br>
+               2. Participants were encouraged to converse in both their native language and English, fostering multilingual conversation.<br>
+               3. Participants were cautioned not to make any alteration to the recording device settings to avoid unintentional disruptions.<br>
+               4. The lapel microphone was to remain attached to the participant’s collar throughout the entire recording, ensuring consistent audio quality.<br>
+               5. Android phones (used for recordings) were to be set to airplane mode or ”Do Not Disturb” mode, with internet connectivity turned off, to minimize external disturbances. <br>
+               6. All participants and recording moderators were instructed to switch their mobile phones to silent or airplane mode to prevent any interruptions during the recording process.<br>
+               7. The conversation topic was collaboratively chosen by the participants to ensure that everyone could engage actively in the discussion.<br>
+               8. Before initiating the recording, participants were required to complete a consent form, confirming their willingness to contribute to the dataset and acknowledging receipt of monetary compensation for their involvement.<br>
+               9. A brief 10-second audio check was performed to ensure each participant’s comprehension of the process and verify the recording quality.<br>
+               10. The final recording session commenced once all technical and procedural checks were complete, ensuring the data’s integrity and completeness. <br>
+               11. Towards the end of the time slot, participants were prompted to wrap up their conversation.<br>
+               12. After completing the recording, participants must handover the audio recorder (or Android phone) to the recording moderator.<br><br>
+               </div>
+               <left>
+                  <h5>GENERAL GUIDELINES </h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               1. Participants were directed to commence recording immediately upon receiving a command, and synchronization was facilitated by the meeting moderators through visual cues provided via placards.<br>
+               2. Participants were actively encouraged to engage in code-switching between languages during their conversations, enriching the dataset with linguistic diversity. When needed, participants were prompted to incorporate code-switching.<br>
+               3. Lapel microphones were placed in close proximity to the collar area, and participants were cautioned not to touch or adjust the microphones during recording to avoid any potential audio disruptions.<br>
+               4. Participants were strongly discouraged from exiting the recording session prematurely to maintain data continuity.<br>
+               5. The recording sessions began with a synchronized countdown, and participants were required to press the recording button on their Audio recorder (or ASR app) simultaneously, as guided by the moderators. Simultaneously, one of the recording moderators initiated the far-field recording using the Audacity record option. <br>
+               6. Participants were encouraged to maintain a comfortable posture during the recording.<br>
+               7. A variety of session compositions were recorded, including all-male, all-female, and mixedgender conversations, enhancing the dataset’s diversity. In mixed-gender conversations, female speakers were strategically positioned in-between male speakers to ease the annotation process.<br><br>
+               These comprehensive guidelines were meticulously followed during the data collection process to ensure the reliability and richness of the DISPLACE-2023 dataset.<br><br>
+               </div>
+               <hr>
+               </section>
+               <section id="speaker-ids-explained" style="padding: 40px; background: #fff;">
+               <left>
+                  <h3><u>SPEAKER IDs EXPLAINED</u></h3>
+               </left>
+               <hr>
+               <div class="justified" style="text-align: justify;">
+               A unique speaker ID with the following format is assigned to individual speaker.<br>
+               < Gender >_< Recording Location >_< Native Language >_< Unique Identifier ><br><br>
+               • Gender: The first field denotes gender of the speaker. It must be either M (for males) or F (for females).<br>
+               • Native Language: The third field signifies the speaker’s native language, and we utilized the first two letters of the native language name as a symbolic representation. Some of the language codes employed were as follows: <br>
+               • Unique Identifier: The final field indicates a four-digit number, which serves as a unique identifier assigned to each speaker, beginning with sequential numbering starting at one (i.e., starting from 0001).<br><br>
+               Examples: M B Hi 0001 and M M Ka 0001<br><br>
+               </div>
+               <hr>
+               </section>
+            
+               <section id="recording-file-ids-explained" style="padding: 40px; background: #fff;">
+               <left>
+                  <h3><u>RECORDING FILE IDs EXPLAINED</u></h3>
+               </left>
+               <hr>
+               <div class="justified" style="text-align: justify;">
+               A unique file ID is assigned to individual close-talking and far-field recordings.<br><br>
+               </div>
+               <left>
+                  <h5>FAR-FIELD RECORDING ID</h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               < Date(YYYYMMDD) >_< Time(HHMM) >_< sessionID >_< OmniUniID >_< SpokenLanguages> .wav<br><br>
+               • Date(YYYYMMDD): The first field signifies the date on which recording was conducted. The date format is year (YYYY), month (MM) and date (DD).<br>
+               • Time(HHMM): This field denotes the time at which a recording starts. The 24 hour time format is followed with hour(HH) and minutes (MM) sub-fields.<br>
+               • sessionID: A unique session ID is assigned to individual conversation with the format: < Location >< T hreeDigitNum >. Here, recording site location is represented by Location filed. It can take either ’B’ (for Bengaluru) or ’M’ (for Mangalore) values. A three digit number is used to assign a unique tag to individual recording session. Example: B001, M016, B032, etc.<br>
+               • OmniUniID: A tag used to denote whether far-field audio is recorded using either omnidirectional (OD) or single-directional (SD) microphone. <br>
+               • Spoken Languages: The final field indicates the languages spoken by all the speakers during the conversation. For instance, if S1 spoke Malayalam and English, and S2 used Malayalam, Hindi and English, then the spoken language field should contain ’MaHiEn’ value.<br><br>
+               Example:
+               Omnidirectional Microphone File: 20221011 1545 B001 OD En.wav<br><br>
+               </div>
+               <left>
+                  <h5>CLOSE-TALKING FILE ID</h5>
+               </left>
+               <div class="justified" style="text-align: justify;">
+               < Date(YYYYMMDD) > < T ime(HHMM) > < SessionID > < RelativeSpeakerID > < SpokenLanguages > .wav<br><br>
+               • Date(YYYYMMDD): Same format as used in the far-field recording ID.<br>
+               • Time(HHMM): Same format as used in the far-field recording ID.<br>
+               • Session ID: Same format as used in the far-field recording ID.<br>
+               • Relative Speaker ID: A relative speaker identification is allocated to each speaker based on their speaking sequence within the conversation. For instance, the speaker who begins the conversation is designated with the label S1. The recording moderators should attentively observe the initial minutes of the conversation to document the order in which the speakers participate. <br>
+               • Spoken Languages: The final field indicates the languages spoken by the speaker during the conversation. For instance, if S1 spoke Malayalam and English, the spoken language field should contain either an ’MaEn’ or ’EnMa’ entry. Including information about the spoken languages in the file names greatly aids the annotation process. <br><br>
+               Examples:<br>
+               Close talking Mic1: 20221011 1545 B001 S1 En.wav<br>
+               Close talking Mic2: 20221011 1545 B001 S2 En.wav<br>
+               Close talking Mic3: 20221011 1545 B001 S3 En.wav<br><br>
+               </div>
+               <hr>
+               </section>
+               <section id="data-management" style="padding: 40px; background: #fff;">
+               <left>
+                  <h3><u>DATA MANAGEMENT</u></h3>
+               </left>
+               <hr>
+               <div class="justified" style="text-align: justify;">
+               Upon concluding the recording session, all the close-talking audio and far-field data are systematically renamed according to the aforementioned naming conventions and stored in a centralized location. The close-talking recordings are time-aligned with the far-field audio, resampled to 16 kHz, and normalized within the range of [−1, 1]. Additionally, a readme file is created for each conversation, and an example readme file is presented in Figure below. The worn microphone speech was recorded for annotation purposes (for ease of human listening to determine the speech, speaker and language boundaries). All the system development and evaluation is carried out using the far-field microphone recordings. <br><br>
+               </div>
+               </section>
+               <center>
+                  <div class="img">
+                     <img src="images/ReadMe.png" class="img-responsive" alt="Recording Setup"  width="900" height="650" >
+                  </div>
+               </center>
+               <br><br> 
+            
+            
+            <!-- footer
+               ================================================== -->
+            <footer>
+               <div class="row">
+               <div class="twelve columns">
+                  <ul class="copyright">
+                     <li>&copy; Copyright DISPLACE Challenge</li>
+                  </ul>
+               </div>
+            </footer>
+            <!-- Footer End-->
+            <!-- Java Script
+               ================================================== -->
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+            <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+            <script src="js/jquery.flexslider.js"></script>
+            <script src="js/waypoints.js"></script>
+            <script src="js/jquery.fittext.js"></script>
+            <script src="js/magnific-popup.js"></script>
+            <script src="js/doubletaptogo.js"></script>
+            <script src="js/spin.js"></script>
+            <script src="js/init.js"></script>
+         </body>
+      </html>
