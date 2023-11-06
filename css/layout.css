@@ -32,14 +32,16 @@ header {
    height: 600px;
    min-height: 100px;
    width: 100%;
-
-   background: #161415 url(../images/DISPLACE.png) no-repeat top center;
-
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
+   background: white url(../images/DISPLACE.jpg) no-repeat top center;
+   background-size: 90%; /* Increase the image size to 90% */
+   background-position: center 30%;
+   -webkit-background-size: 90%; /* Webkit browsers */
+   -webkit-background-position: center 30%;
    text-align: center;
    overflow: hidden;
 }
+
+
 
 
 
