@@ -29,17 +29,18 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 header {
    position: relative;
-   height: 600px;
+   height: 100px;
    min-height: 100px;
    width: 100%;
    background: white url(../images/DISPLACE2024_illustration_f3.jpg) no-repeat top center;
-   background-size: 90%; /* Increase the image size to 90% */
+   background-size: 50%; /* Decrease the image size to 50% */
    background-position: center 30%;
-   -webkit-background-size: 90%; /* Webkit browsers */
+   -webkit-background-size: 80%; /* Webkit browsers */
    -webkit-background-position: center 30%;
    text-align: center;
    overflow: hidden;
 }
+
 
 
 
