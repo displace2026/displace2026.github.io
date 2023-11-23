@@ -265,30 +265,36 @@ function showHide(shID) {
          <div class="twelve columns">
 
             <h1>Tracks</h1>
-            <p class="drop-cap"> This challenge organises two tracks and you can participate in one or both of them. The Track-1 is dedicated to speaker diarization and Track-2 focuses on language diarization. You are encouraged to submit your experimental findings and observations to the DISPLACE Challenge at Interspeech 2023 for peer-review and subsequent consideration for presentation (and publication) in the conference. For this we require you to participate in one or both the tracks.  </p>
-		<br>
+            <p class="drop-cap"> This challenge organizes three tracks and you can participate in one, two, or even all of them.   </p>
+		 <ul class="lining" align="justify">
+		<li> The Track-1 is dedicated to speaker diarization (SD). <li>
+		<li> The Track-2 focuses on language diarization (LD).<li>	
+		<li> The Track-3 is exclusive for Automatic Speech Recognition (ASR)<li>	
+		<li>  You are encouraged to submit your experimental findings and observations to the DISPLACE Challenge at Interspeech 2024 for peer-review and subsequent consideration for presentation (and publication) in the conference. For this we require you to participate in one or both the tracks.<li>
+		 </ul>	 
+		 <br>
              <dl class="lining" align="justify">
              <b><dt>Track-1:</dt> Speaker Diarization in multilingual scenarios.</b>
 		  <ul class="lining" align="justify">
                  <li>a. The goal is to perform speaker diarization (who spoke when) in multilingual conversational audio data, where the same speaker speaks in multiple code-mixed and/or code switched languages. </li>
-                 <li>b. You will be provided with a dev set (far-field recordings), and a baseline system to enable design of your own models.</li>
-                 <li>c. Subsequently, a blind evaluation set (far-field recordings), will be provided to all participants. You will need to submit your model predictions (in rttm format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring performance of other teams on the same dataset.</li>
-                 <li>d. The performance metric for evaluation will be Diarization Error Rate (DER). </li>
-                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2023.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE challenge, Interspeech 2023 for peer-review <a href="https://www.interspeech2023.org/call-for-papers/">(Submission page) .</a> </li>
+                 <li>b. You will be provided with a dev set (far-field recordings), and a baseline system to enable the design of your own models.</li>
+                 <li>c. Subsequently, a blind evaluation set (far-field recordings), will be provided to all participants. You will need to submit your model predictions (in rttm format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring the performance of other teams on the same dataset.</li>
+                 <li>d. The performance metric for evaluation will be the Diarization Error Rate (DER). </li>
+                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2024.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE challenge, Interspeech 2023 for peer-review <a href="https://www.interspeech2024.org/call-for-papers/">(Submission page) .</a> </li>
 		 <li>f. The participating teams are encouraged to use any open datasets for training and developing the diarization systems. </li>
 		 </ul>
              <b><dt>Track-2:</dt> Language Diarization in multi-speaker settings.</b>
 	         <ul class="lining" align="justify">
-                 <li>a. The goal is to perform language diarization in multi- speaker conversational audio data, recorded in far-field settings. </li>
-                 <li>b. You will be provided with a dev audio dataset, and a baseline system to enable design of your own models. </li>
-                 <li>c. Subsequently, a blind evaluation dataset will be provided to all participants. You will need to submit your model predictions (in rttm format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring performance of other teams on the same dataset. </li>
-                 <li>d. The performance metric for evaluation will be Diarization Error Rate (DER). </li>
-                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2023.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE challenge, Interspeech 2023 for peer-review <a href="https://www.interspeech2023.org/call-for-papers/">(Submission page) .</a> </li>
+                 <li>a. The goal is to perform language diarization in multi-speaker conversational audio data, recorded in far-field settings. </li>
+                 <li>b. You will be provided with a dev audio dataset, and a baseline system to enable the design of your own models. </li>
+                 <li>c. Subsequently, a blind evaluation dataset will be provided to all participants. You will need to submit your model predictions (in rttm format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring the performance of other teams on the same dataset. </li>
+                 <li>d. The performance metric for evaluation will be the Diarization Error Rate (DER). </li>
+                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2024.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE-2024 challenge, Interspeech 2024 for peer-review <a href="https://www.interspeech2024.org/call-for-papers/">(Submission page) .</a> </li>
 		 <li>f. The participating teams are encouraged to use any open datasets for training and developing the diarization systems. </li>
                 </ul>
      	      </dl>
 For both tracks, the overall evaluation of submissions will be done in terms of Diarization 
-Error Rate (DER) with overlap and without collar. A baseline system for both the tracks will be provided to the registered teams. 
+Error Rate (DER) with overlap and without collar. A baseline system for both tracks will be provided to the registered teams. 
 The evaluation results of submissions will be displayed on a leaderboard for continuous monitoring of the progress. 
             <hr>
 
@@ -367,13 +373,13 @@ After a quick verification from our side, we will confirm your registration and 
 		 <dl class="lining" align="justify">
              <dt><b>Q. Which programming languages can I use?</b></dt>
              <br>
-             <dd> A. You are free to use any programming language you like. For system evaluation we will require you to submit the output decisions as a Rich Transcription Time Marked (RTTM) file. 
+             <dd> A. You are free to use any programming language you like. We will require you to submit the output decisions as a Rich Transcription Time Marked (RTTM) file for system evaluation. 
              </dd>
              
              <dt><b>Q. How do I get the DISPLACE audio dataset?</b>
              </dt>
              <br>
-             <dd> A. It is simple - by registering for the challenge. Please see the registration section in this webpage (above).
+             <dd> A. It is simple - by registering for the challenge. Please see the registration section on this webpage (above).
              </dd>
 			 
              <dt><b>Q. Can I re-distribute the data?</b>
@@ -383,10 +389,10 @@ After a quick verification from our side, we will confirm your registration and 
              </dd>
 			 
 			 
-             <dt><b>Q. In which format, do I need to submit output?</b>
+             <dt><b>Q. In which format, do I need to submit the output?</b>
              </dt>
              <br>
-             <dd> A. Output should be in text file with Rich Transcription Time Marked (RTTM) extension.  
+             <dd> A. The output should be in the text file with the Rich Transcription Time Marked (RTTM) extension.  
              </dd>			 
 			 
 			 
@@ -395,7 +401,7 @@ After a quick verification from our side, we will confirm your registration and 
 	     <dt><b>Q. How do I submit my findings obtained by participating in this challenge to Interspeech 2024?</b>
              </dt>
              <br>
-             <dd>A. That's great! You can follow the Interspeech 2023 paper submission portal <a href ="https://www.interspeech2023.org/call-for-papers/ ">here</a>. Remember to select "DISPLACE Challenge” while uploading your paper there. 
+             <dd>A. That's great! You can follow the Interspeech 2024 paper submission portal <a href ="https://www.interspeech2024.org/call-for-papers/ ">here</a>. Remember to select "DISPLACE Challenge” while uploading your paper there. 
              </dd>			 
      	  </dl>
           <hr>
@@ -408,7 +414,7 @@ After a quick verification from our side, we will confirm your registration and 
       <div class="row add-bottom">
          <div class="twelve columns">
             <h1>Contact Us</h1>
-             You have more questions? Feel free to contact us at:<p><a href="mailto:displace2023@gmail.com">displace2023@gmail.com</a>.</p>
+             You have more questions? Feel free to contact us at:<p><a href="mailto:displace2024@gmail.com">displace2024@gmail.com</a>.</p>
              
           <hr>
          </div>
