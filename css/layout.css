@@ -35,7 +35,7 @@ header {
    background: white url(../images/DISPLACE2024_illustration_f3.jpg) no-repeat top center;
    background-size: 50%; /* Decrease the image size to 50% */
    background-position: center 30%;
-   -webkit-background-size: 80%; /* Webkit browsers */
+   -webkit-background-size: 90%; /* Webkit browsers */
    -webkit-background-position: center 30%;
    text-align: center;
    overflow: hidden;
