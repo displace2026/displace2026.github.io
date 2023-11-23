@@ -32,7 +32,7 @@ header {
    height: 100px;
    min-height: 100px;
    width: 100%;
-   background: white url(../images/DISPLACE2024_illustration_f3.jpg) no-repeat top center;
+   background: white url(../images/DISPLACE2024_illustration.png) no-repeat top center;
    background-size: 50%; /* Decrease the image size to 50% */
    background-position: center 30%;
    -webkit-background-size: 80%; /* Webkit browsers */
