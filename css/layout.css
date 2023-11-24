@@ -1023,3 +1023,14 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+
+.drop-cap::first-letter {
+   font-size: 830%; /* You can adjust this value to increase or decrease the size */
+   /* You can also use other properties like font-weight, color, etc. */
+}
+
+.custom-paragraph {
+   line-height: 1.5; /* Adjust this value to change the line spacing */
+ }
+
+
