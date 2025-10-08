@@ -1,586 +1,113 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLACE Challenge 2026</title>
+    <meta name="description" content="DISPLACE Challenge 2026 website">
+    <meta name="author" content="DISPLACE Team">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-        <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DISPLACE Challenge</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <!-- JS -->
+    <script src="js/modernizr.js"></script>
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" >
-
-
-    
-
-<!-- to add click to know more-->
-<script language="javascript" type="text/javascript">
-function showHide(shID) {
-   if (document.getElementById(shID)) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID).style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID).style.display = 'none';
-      }
-   }
-}
-</script>
-
-<style type="text/css">
-   /* This CSS is used for the Show/Hide functionality. */
-   .more {
-      display: none;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666; }
-   a.showLink, a.hideLink {
-      text-decoration: none;
-      color: #36f;
-      padding-left: 8px;
-      background: transparent url(down.gif) no-repeat left; }
-   a.hideLink {
-      background: transparent url(up.gif) no-repeat left; }
-   a.showLink:hover, a.hideLink:hover {
-      border-bottom: 1px dotted #36f; }
-</style>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
 
 </head>
-
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-         <ul id="nav" class="nav">
-             <div class="img pull-left">
-               <img src="images/displace2024.png" max-width="100%" height="30" width="30">
-            </div> 
+<!-- Header -->
+<header id="home">
+    <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li class="current"><a class="smoothscroll" href="#about">About</a></li>
-            <li class="current"><a href=overview.html>Database</a></li>
-            <li class="current"><a class="smoothscroll" href="#timeline">Timeline</a></li>
-            <li class="current"><a class="smoothscroll" href="#challenges">Tracks</a></li>
-            <li class="current"><a class="smoothscroll" href="#register">Register</a></li>
-	    <li class="current"><a class="smoothscroll" href="#resources">Resources</a></li>
-            <li class="current"><a class="smoothscroll" href="#organizers">Organizers</a></li>
-            <li class="current"><a class="smoothscroll" href="#faqs">FAQs</a></li>
-            <li class="current"><a class="smoothscroll" href="#contactus">Contact Us</a></li>
-         </ul> <!-- end #nav -->
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#timeline">Timeline</a></li>
+            <li><a class="smoothscroll" href="#tracks">Tracks</a></li>
+            <li><a class="smoothscroll" href="#register">Register</a></li>
+            <li><a class="smoothscroll" href="#resources">Resources</a></li>
+            <li><a class="smoothscroll" href="#organizers">Organizers</a></li>
+            <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
+            <li><a class="smoothscroll" href="#contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
 
-      </nav> <!-- end #nav-wrap --> 
-      <!-- <div class="img pull-left">
-         <img src="images/Logo.png" max-width="100%" height="auto" width="200">
-      </div> -->
-      
-      <div class="row banner">
-      <!--
-         <div class="banner-text">
-             <br><br><br><br>
-             <hr />
-            <ul class="social">
-               <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-            </ul>
-         </div>
-   -->
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-<!--       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p> -->
-
-   </header> <!-- Header End -->
- 
-   
-   <!-- Style Guide Section
-   ================================================== -->
-   <section id="Latest Updates" style="padding: 10px 0 12px; background: #fff;">
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-           
-            <p class="drop-cap"  align="justify">
-               
-               <h3> 
-                  <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">Welcome to <b style="font-size: 20px; color: blue;"> The Second DISPLACE Challenge @Interspeech 2024</b> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> 
-                  <br>We are looking forward to seeing everyone!
-               </h3>
-            
-<h5> <p><b style="font-size: 18px; color: blue;">The following papers related to the challenge have been accepted at Interspeech 2024:</b></p></h5>
-   <ul class="lining" align="left">
-      <li style="list-style-type: square"> Shareef Babu Kalluri, Prachi Singh, Pratik Roy Chowdhuri, Apoorva Kulkarni, Shikha Baghel, Pradyoth Hegde, Swapnil Sontakke, Deepak K T, S.R. Mahadeva Prasanna, Deepu Vijayasenan, Sriram Ganapathy, <a href="https://www.isca-archive.org/interspeech_2024/kalluri24_interspeech.pdf">"The Second DISPLACE Challenge: DIarization of SPeaker and LAnguage in Conversational Environments"</a> </li>
-      <li style="list-style-type: square"> Gabriel Pîrlogeanu, Octavian Pascu, Alexandru-Lucian Georgescu, Horia Cucu,  <a href="https://www.isca-archive.org/interspeech_2024/pirlogeanu24_interspeech.pdf">"Hybrid-Diarization System with Overlap Post-Processing for the DISPLACE 2024 Challenge"</a> </li>
-      <li style="list-style-type: square"> Joonas Kalda, Tanel Alumae, Martin Lebourdais, Hervé Bredin, Séverin Baroudi, Ricard Marxer<a href="https://www.isca-archive.org/interspeech_2024/kalda24_interspeech.pdf">"TalTech-IRIT-LIS Speaker and Language Diarization Systems for DISPLACE 2024" </a></li>
-   </ul>
-<h5> <p><b style="font-size: 18px; color: blue;">Latest Updates (as of 14/06/2024):</b></p></h5>
-            <ul class="lining" align="left">
-		    <li> [13-June-24] The Second DISPLACE challenge paper is available here. <dd><a href="http://www.arxiv.org/abs/2406.09494"> Click here</a> </dd>. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [13-June-24] DISPLACE-2024 data is now publically available using the following Zenodo link <dd><a href="https://zenodo.org/records/12166687"> Click here</a> (Password Protected)</dd>. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [7-June-24] <strong> Congratulations to all the participants whose papers have been accepted at Interspeech 2024. </strong> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [7-June-24] <strong> The Second DISPLACE Challenge paper has been accepted at Interspeech 2024. </strong> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [20-May-24] Last date to submit the report on the findings of DISPLACE data is 2nd June 2024. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [20-May-24]Coda-lab leaderboard submissions <strong>closed </strong>. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [8-May-24] Web demo for Speaker Diarization and Language Diarization <dd> <a href="https://www.displacedemo.tech" > Click here</a> </dd> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> </li>
-		    <li> [1-May-24] "Summary of the DISPLACE Challenge 2023 -- DIarization of SPeaker and LAnguage in Conversational Environments" has been accepted in Speech Communication Journal -- Congratulations Team DISPLACE2023 <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> </li>
-		    <li> [24-April-24]Coda-lab leaderboard submissions will be active from 1st April 2024 - <s>20th April 2024 </s>Extended till  20 May 2024 . <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [31-Mar-24]Coda-lab leaderboard submissions will be active from 1st April 2024 - 20th April 2024. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [26-Mar-24] <strong>Phase-II registrations are open </strong> (No need to register for Phase-I registered participants - you are already registered &#128515;).<img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [26-Feb-24]System Report submission date extended to 4 March 2024. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [26-Feb-24]Phase 1 Evaluation date extended to 4 March 2024. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [9-Feb-24]Track 3 (ASR) Close field recordings and far field recordings are released for Dev and Eval Sets. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [9-Feb-24] Change in the codalab link (Already registered participants requested to re-register with this link again) <a href="https://codalab.lisn.upsaclay.fr/competitions/17682?secret_key=041ccb71-3386-4696-917b-6452ca346d80"> click here</a>. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    
-		    <li> [8-Feb-24]Baseline details updated. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [1-Feb-24]Coda-lab leaderboard is activated. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [1-Feb-24]Evaluation data released. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [1-Feb-24]Unsupervised development part2 data released. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-		    <li> [30-Jan-24]Registration deadline extended till 15 Feb 2024. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">  </li>
-               <li>[22-Jan-24] Baseline systems are released</a>.  <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">       </li>	    
-		    <li>[19-Jan-24] <strong>Proposal accepted for a special session at Interspeech 2024, Kos Islands, Greece. </strong> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> </li>    
-		<li>[10-Jan-24] Development set is released</a>.  <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">       </li>	    
-	       <li>[10-Jan-24] Submit the signed <a href="https://displace2024.github.io/docs/Terms_and_Conditions_DISPLACE_2024.pdf">Terms & Conditions</a> document to get access to the dataset and baseline systems</a>.</li>
-	        <li>[15-Dec-23] Challenge Registration is open. <a href="https://displace2024.github.io/#register">Click here to Register</a>.</li>
-<!-- 	       <li>[24-Jan-24] Track-1 (Speaker diarization for multilingual scenarios) baseline is released</a>.</li>
-	       <li>[25-Jan-24] Track-1 baseline is updated</a>.</li>
-	       <li>[03-Feb-24] Track-2 (Language Diarization in multi-speaker settings) baseline is released</a>.</li>
-	       <li>[08-Feb-24] <a href="https://displace2024.github.io/#resources">Evaluation plan</a> is released</a>.</li>
-	       <li>[08-Feb-24] <a href="https://displace2024.github.io/#resources">Leaderborad</a> is active</a>.</li>
-               <li>[14-Feb-24] Eval Phase-1 Data is released</a>.</li>
-	       <li>[24-Feb-24] Phase-1 evaluation closes on 4 March</a>.</li>
-	       <li>[1-Apr-24] Phase-2 evaluation is started</a>.</li>
-	       <li>[10-May-24] Deadline for Phase-2 evaluation is extended</a>.</li> -->
-
-            </ul> 	
-            </p>
-      </div>
-      </div>
-   </section>
-
-   <section id="about" style="padding: 10px 0 12px; background: #fff;">
-
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-            <hr>
-
-            <h1>About</h1>
-            <p class="drop-cap"  align="justify">
-                <br>
-		In multilingual communities, the social conversations often involve code-mixed and
-               code-switched speech. The code-mixing refers to the scenario where words or
-               morphemes from one language (secondary) are used within a sentence of another
-               language (primary). However, the switching of languages at the sentence or phrase level
-               is known as code-switching, where the conversational language is itself shifted. In such
-               cases, the extraction of various analytics for speech-based systems, such as speaker
-               and language information or automatic speech recognition (ASR) to generate rich
-               transcriptions, becomes highly challenging. The current speaker diarization systems
-               are simply not equipped to deal with multilingual conversations, where the same talker
-               speaks in multiple code-mixed languages.       <br>
-		 <p  align="justify">Focusing on the Interspeech-2024 theme, i.e., Speech and Beyond, 
-			 the DISPLACE-2024 challenge aims to address research issues related to speaker and language diarization along with Automatic Speech Recognition (ASR) in an inclusive manner. 
-			 The goal of the challenge is to establish new benchmarks for speaker diarization (SD) in multilingual settings, language diarization (LD) 
-			 in multi-speaker settings, and ASR in multi-accent settings, using the same underlying dataset. The previous works have addressed speaker and language diarization, &amp; ASR but in isolation. 
-			 A collective effort from worldwide researchers is required to address associated research issues. We look forward to your participation in reaching a 
-			 new milestone in the speaker and language diarization &amp; ASR areas. We also encourage general submissions in the field of speaker and/or language diarization and/or ASR
-			 under DISPLACE-2024 challenge/special session. 
-			
-              </p>
-        <p  align="justify"> We also encourage general submissions related to speaker and language diarization &amp; ASR in DISPLACE-2024 challenge / special session 
-		in Interspeech-2024.
-		</p>
-		 
-        <p  align="justify">  Summary of the DISPLACE Challenge 2023 -- DIarization of SPeaker and LAnguage in Conversational Environments <a href="https://doi.org/10.1016/j.specom.2024.103080"> (Click here</a> for full paper) has been accepted in Speech Communication.
-		
-		</p>
-		 
-		  <h5>
-			  <ul class="lining" align="centre">
-				<a href="docs/DISPLACE2024_Flyer_v5.pdf"> Click here</a> to download the flyer.
-		   	</ul>
-		  </h5>
-            </p>
-            <hr>
-<!--             <h5>Updates</h5>
-            <ul class="lining" align="left">
-               <li>[15-Dec-23] Challenge Registration is open. <a href="https://displace2024.github.io/#register">Click here to Register</a>.</li>
-	       <li>[10-Jan-24] Submit the signed <a href="https://displace2024.github.io/docs/Terms_and_Conditions_DISPLACE_2024.pdf">Terms & Conditions</a> document to get access to the dataset and baseline systems</a>.</li>
-	       <li>[10-Jan-24] Development set is released</a>.  <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">       </li>	
-	       <li>[19-Jan-24] Proposal accepted for a special session at Interspeech 2024, Kos Islands, Greece. <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> </li>    
-	       <li>[24-Jan-24] Track-1 (Speaker diarization for multilingual scenarios) baseline is released</a>.</li>
-	       <li>[25-Jan-24] Track-1 baseline is updated</a>.</li>
-	       <li>[03-Feb-24] Track-2 (Language Diarization in multi-speaker settings) baseline is released</a>.</li>
-	       <li>[08-Feb-24] <a href="https://displace2024.github.io/#resources">Evaluation plan</a> is released</a>.</li>
-	       <li>[08-Feb-24] <a href="https://displace2024.github.io/#resources">Leaderborad</a> is active</a>.</li>
-               <li>[14-Feb-24] Eval Phase-1 Data is released</a>.</li>
-	       <li>[24-Feb-24] Phase-1 evaluation closes on 4 March</a>.</li>
-	       <li>[1-Apr-24] Phase-2 evaluation is started</a>.</li>
-	       <li>[10-May-24] Deadline for Phase-2 evaluation is extended</a>.</li>
-
-            </ul> 	 -->
-            
-                      </div>
-        </div> <!-- Row End-->
-    </section>
-    
-
-
-<section id="timeline" style="padding: 10px 0 12px; background: #fff;">
-
-      <div class="row add-bottom">
-         <div class="twelve columns">
-            <hr>
-            <h1>Timeline </h1>
-             
-		 <dl class="lining" align="justify">
-            <dt>Registrations Opens:</dt>
-             15 Dec 2023 &emsp;
-            
-            <dt>Data Release (Dev):</dt>
-             10 Jan 2024<br>
-            <dt>Baseline System Release:</dt>
-            20 Jan 2024 <br>
-            <dt>Leaderboard Active:</dt>
-            1 Feb 2024<br>			 	 
-            <dt>Phase-I Evaluation Data Release:</dt>
-             1 Feb 2024<br>
-            <dt><b>Registrations Closes:</b></dt>
-             <s> 1 Feb 2024</s>   Extended till 15 Feb 2024 <br>
-	     <dt>Phase-I Evaluation Closes:</dt>
-	     <s> 28 Feb 2024</s>   Extended till 4 March 2024 <br>
-             
- 	    <dt>System Report submission:</dt>
-            <s> 28 Feb 2024</s>   Extended till 4 March 2024 <br>
-            <dt>INTERSPEECH Paper Submission Deadline:</dt>
-             </b> 2 Mar 2024 </b> <br>
-            <dt>INTERSPEECH Paper Update Deadline:</dt>
-	     </b> 11 Mar 2024 </b> <br>
-			 
-	     <dt>Phase-II Evaluation Opens:</dt>
-             1 Apr 2024 <br>
-	    			 
-	    <dt>Phase-II Evaluation Closes:</dt>
-             <s> 20 Apr 2024 </s> <s>Extended till  20 May 2024</s> Closed <br>
-            
-
-
-     	  </dl>
-          
-         </div>
-      </div>
-</section> 
-<section id="challenges" style="padding: 10px 0 12px; background: #fff;">
-
-      <div class="row add-bottom">
-
-         <div class="twelve columns">
-            <hr>
-
-            <h1>Tracks</h1>
-            <p class="drop-cap custom-paragraph">This challenge organizes three tracks and you can participate in one, two, or even all of them.<br>
-               Track-1 is dedicated to speaker diarization (SD). <br>
-               Track-2 focuses on language diarization (LD).<br> 
-               Track-3 is exclusive for Automatic Speech Recognition (ASR)</p>
-		 <ul class="lining" align="justify">
-			
-		<li>  You are encouraged to submit your experimental findings and observations to the DISPLACE-2024 Challenge at Interspeech 2024 for peer review and subsequent consideration for presentation (and publication) at the conference. For this, we require you to participate in one, two, or even all of the tracks.<li>
-		 </ul>	 
-		 <br>
-             <dl class="lining" align="justify">
-             <b><dt>Track-1:</dt> Speaker Diarization in multilingual scenarios.</b>
-		  <ul class="lining" align="justify">
-                 <li>a. The goal is to perform speaker diarization (who spoke when) in multilingual conversational audio data, where the same speaker speaks in multiple code-mixed and/or code switched languages. </li>
-                 <li>b. You will be provided with a dev set (far-field recordings), and a baseline system to enable the design of your own models.</li>
-                 <li>c. Subsequently, a blind evaluation set (far-field recordings), will be provided to all participants. You will need to submit your model predictions (in rttm format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring the performance of other teams on the same dataset.</li>
-                 <li>d. The performance metric for evaluation will be the Diarization Error Rate (DER). </li>
-                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2024.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE challenge, Interspeech 2023 for peer-review <a href="https://www.interspeech2024.org/call-for-papers/">(Submission page) .</a> </li>
-		 <li>f. The participating teams are encouraged to use any open datasets for training and developing the diarization systems. </li>
-		 </ul>
-             <b><dt>Track-2:</dt> Language Diarization in multi-speaker settings.</b>
-	         <ul class="lining" align="justify">
-                 <li>a. The goal is to perform language diarization in multi-speaker conversational audio data, recorded in far-field settings. </li>
-                 <li>b. You will be provided with a dev audio dataset, and a baseline system to enable the design of your own models. </li>
-                 <li>c. Subsequently, a blind evaluation dataset will be provided to all participants. You will need to submit your model predictions (in rttm format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring the performance of other teams on the same dataset. </li>
-                 <li>d. The performance metric for evaluation will be the Diarization Error Rate (DER). </li>
-                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2024.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE-2024 challenge, Interspeech 2024 for peer-review <a href="https://www.interspeech2024.org/call-for-papers/">(Submission page) .</a> </li>
-		 <li>f. The participating teams are encouraged to use any open datasets for training and developing the diarization systems. </li>
-                </ul>
-		     <b><dt>Track-3:</dt> Automatic Speech Recognition in multi-accent settings.</b>
-	         <ul class="lining" align="justify">
-                 <li>a. The goal is to perform automatic speech recognition in multi-accent conversational audio data, recorded in far-field settings. </li>
-                 <li>b. You will be provided with a dev audio dataset, and a baseline system to enable the design of your own models. </li>
-                 <li>c. Subsequently, a blind evaluation dataset will be provided to all participants. You will need to submit your model predictions (in text format) on the blind set to a leaderboard interface (setup in Codalab). The leaderboard will be featuring the performance of other teams on the same dataset. </li>
-                 <li>d. The performance metric for evaluation will be the Word Error Rate (WER). </li>
-                 <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers (Submission Deadline: <a href="https://displace2024.github.io/#timeline"> click here</a>). All participants are also encouraged to submit their findings to the DISPLACE-2024 challenge, Interspeech 2024 for peer-review <a href="https://www.interspeech2024.org/call-for-papers/">(Submission page) .</a> </li>
-		 <li>f. The participating teams are encouraged to use any open datasets for training and developing the ASR systems. </li>
-                </ul>
-     	      </dl>
-For  track 1 and track 2, the overall evaluation of submissions will be done in terms of Diarization 
-Error Rate (DER) with overlap and without collar. A baseline system for both tracks will be provided to the registered teams. 
-For track 3 , the overall evaluation of submissions will be in terms of Word Error Rate (WER). 
-The evaluation results of submissions will be displayed on a leaderboard for continuous monitoring of the progress. 
-            
-
-         </div>
-
-      </div>
-
+<!-- Latest Updates Section -->
+<section id="latest-updates" style="padding: 20px; background: #fff;">
+    <h3>Welcome to the Third DISPLACE Challenge @Interspeech 2026</h3>
+    <p>Latest Updates (as of 08/10/2025) will be added here.</p>
 </section>
-    
-<section id="register" style="padding: 10px 0 12px; background: #fff;">
-      <div class="row add-bottom">
-         <div class="twelve columns">
-            <hr>
 
-            <h1>    Registration   </h1>
-            
-             Thank you for your interest! Below are the two quick steps involved in registering your participation and get started in the challenge.
-             
-             <dl class="lining" align="justify">
-                 <dt><b>Step-1:</b></dt><dd> One representative of the participating team fills the form at: <a href="https://forms.office.com/r/vaYFh623zY?origin=lprLink">click here</a></dd>
-                 <dt><b>Step-2:</b></dt><dd> Subsequently, you need to send a signed <a href="https://displace2024.github.io/docs/Terms_and_Conditions_DISPLACE_2024.pdf">Terms & Conditions</a> (please, save it as "Terms_and_Conditions_DISPLACE_2024_&ltteam_name&gt.pdf") document to us at <a href="displace2024@gmail.com">displace2024@gmail.com</a>.</dd>
-		     
-		 </dl>
-After a quick verification from our side, we will confirm your registration and send you the access details to the dataset. That's it!.
-		 
-         </div>
-      </div>
-</section> 
+<!-- About Section -->
+<section id="about" style="padding: 20px; background: #f5f5f5;">
+    <h1>About</h1>
+    <p>
+      The DISPLACE Challenge 2026 focuses on Language/Dialect and Topic Identification,  
+      Speaker Diarization in medical conversations in Indian languages,  
+      and Automatic Speech Recognition in multi-dialect settings.  
+      Details about datasets, tasks, and evaluation metrics will be added soon.
+    </p>
+</section>
 
-<section id="resources" style="padding: 10px 0 12px; background: #fff;">
-      <div class="row add-bottom">
-         <div class="twelve columns">
+<!-- Timeline Section -->
+<section id="timeline" style="padding: 20px; background: #fff;">
+    <h1>Timeline</h1>
+    <p>Timeline details for 2026 will be added here.</p>
+</section>
 
-            <hr>
-            <h1>    Resources   </h1>
-           
-             
-             <dl class="lining" align="justify">
-            
-                 <dt><b>Evaluation Plan:</b></dt><dd> Evaluation plan for this challenge is available <a href="docs/DISPLACE2024_Evaluation_Plan_v2.pdf">here</a>.</dd>
-<!-- 		<dt><b>Evaluation Plan:</b></dt><dd> Evaluation plan for this challenge is available here.</dd> -->
-		 <dt><b>DISPLACE Leaderboard:</b></dt><dd><a href="https://codalab.lisn.upsaclay.fr/competitions/17682?secret_key=041ccb71-3386-4696-917b-6452ca346d80">Click here</a>.</dd>
-		  <dt><b>Baseline Systems:</b></dt><dd><a href="https://github.com/displace2024/Displace2024_baseline_updated">Click here</a>.</dd>
-		     <dt> <b> Dataset:</b></dt> <dd><a href="https://zenodo.org/records/10669296"> Click here</a> (Password Protected)</dd>
-		     <dt> <b> Web Demo for Speaker Diarization and Language Diarization:</b></dt> <dd> <a href="https://www.displacedemo.tech" > Click here</a> </dd>
-		
-		 </dl>
-		 
-         </div>
-      </div>
-</section> 
+<!-- Tracks Section -->
+<section id="tracks" style="padding: 20px; background: #f5f5f5;">
+    <h1>Tracks</h1>
+    <p>Track details for 2026 will be updated here.</p>
+</section>
 
+<!-- Registration Section -->
+<section id="register" style="padding: 20px; background: #fff;">
+    <h1>Register</h1>
+    <p>Registration instructions for 2026 will be added here.</p>
+</section>
 
-<section id="organizers" style="padding: 10px 0 12px; background: #fff;">
+<!-- Resources Section -->
+<section id="resources" style="padding: 20px; background: #f5f5f5;">
+    <h1>Resources</h1>
+    <p>Links to datasets, evaluation plan, and baseline systems will be updated here.</p>
+</section>
 
-      <div class="row add-bottom">
-         <div class="twelve columns">
-            <hr>
-            <h1>Organizers</h1>
-             
-		 <dl class="lining" align="justify">
-		<dt><a href="https://in.linkedin.com/in/shareefbabu"> Dr. Kalluri Shareef Babu</a></dt>
-             <dd>Post Doctoral Researcher, Indian Institute of Science, Bangalore, India</dd>	
-		<dt><a href="https://www.linkedin.com/in/shikha-baghel-7aa96432/">Dr. Shikha Baghel</a></dt>
-             <dd>Assistant Professor, National Institute of Technology Karnataka Surathkal, India</dd>
-	     <dt><a href ="http://www.leap.ee.iisc.ac.in/sriram/">Prof. Sriram Ganapathy</a></dt>
-             <dd>Associate Professor, Indian Institute of Science, Bangalore, India</dd>
-          <dt><a href ="https://ece.nitk.ac.in/faculty/deepu-vijayasenan">Prof. Deepu Vijayasenan</a></dt>
-             <dd>Associate Professor, National Institute of Technology Karnataka Surathkal, India</dd>
-             <dt><a href="https://sites.google.com/iitdh.ac.in/prasanna/home/">Prof. S. R. Mahadeva Prasanna</a></dt>
-             <dd>Professor, Dept of Electrical Engineering, IIT Dharwad, India</dd>
-	     <dt><a href="https://deepakthotappa.wixsite.com/mysite/">Dr. K. T. Deepak</a></dt>
-             <dd>Assistant Professor, Indian Institute of Information Technology Dharwad (IIIT-DWD), India</dd>
-	
-             
-     	 </dl>
-      
-         </div>
-      </div>
-</section> 
+<!-- Organizers Section -->
+<section id="organizers" style="padding: 20px; background: #fff;">
+    <h1>Organizers</h1>
+    <p>Organizer information for 2026 will be added here.</p>
+</section>
 
-	<section id="Contributors" style="padding: 10px 0 12px; background: #fff;">
+<!-- FAQs Section -->
+<section id="faqs" style="padding: 20px; background: #f5f5f5;">
+    <h1>FAQs</h1>
+    <p>Frequently asked questions will be updated here.</p>
+</section>
 
-      <div class="row add-bottom">
-         <div class="twelve columns">
-            <hr>
+<!-- Contact Section -->
+<section id="contactus" style="padding: 20px; background: #fff;">
+    <h1>Contact Us</h1>
+    <p>Email us at: <a href="mailto:displace2026@gmail.com">displace2026@gmail.com</a></p>
+</section>
 
-            <h3>Contributors</h3>
-             
-		 <dl class="lining" align="justify">
-		
-             <dt><a href="https://in.linkedin.com/in/shareefbabu">Dr. Kalluri Shareef Babu</a></dt>
-             <dd>Post Doctoral Researcher, Indian Institute of Science, Bangalore, India</dd>
-<dt><a href="http://leap.ee.iisc.ac.in/prachi/">Prachi Singh </a></dt>
-             <dd>Research Scholar, Indian Institute of Science, Bangalore, India</dd>			 
-	   <dt><a href="https://www.linkedin.com/in/shikha-baghel-7aa96432/">Dr. Shikha Baghel</a></dt>
-			
-             <dd>Assistant Professor, National Institute of Technology Karnataka Surathkal, India</dd>
-             
-	     <dt><a href="https://www.linkedin.com/in/pratik-roy-chowdhuri-371759109/">Pratik Roy Chowdhuri</a></dt>
-             <dd>Research Scholar, National Institute of Technology Karnataka Surathkal, India</dd>
-		 <dt><a href ="http://www.leap.ee.iisc.ac.in/sriram/">Prof. Sriram Ganapathy</a></dt>	  
-		<dd>Associate Professor, Indian Institute of Science, Bangalore, India</dd>
-          <dt><a href ="https://ece.nitk.ac.in/faculty/deepu-vijayasenan">Prof. Deepu Vijayasenan</a></dt>
-             <dd>Associate Professor, National Institute of Technology Karnataka Surathkal, India</dd>
-             
-             
-	    <dt><a href="https://sites.google.com/iitdh.ac.in/prasanna/home/">Prof. S. R. Mahadeva Prasanna</a></dt>
-             <dd>Professor, Dept of Electrical Engineering, IIT Dharwad, India</dd>
-	     <dt><a href="https://deepakthotappa.wixsite.com/mysite/">Dr. K. T. Deepak</a></dt>
-             <dd>Assistant Professor, Indian Institute of Information Technology Dharwad (IIIT-DWD), India</dd>		 
-<!-- 	     <dt><a href="https://www.linkedin.com/in/pratik-roy-chowdhuri-371759109/"> -->
-         	<dt><a href="https://www.linkedin.com/in/apoorva-ak01/">Apoorva Kulkarni</a></dt>
-             <dd>Intern at Leap Lab, Indian Institute of Science, Bangalore, India</dd>
-	     <dt><a href="https://www.linkedin.com/in/udyat-jain-83930222a/">Udyat Jain</a></dt>
-             <dd>Intern at Leap Lab, Indian Institute of Science, Bangalore, India</dd>
-	     <dt><a >Pradyoth Hegde, </a></dt>
-             <dd>Research Scholar, Indian Institute of Information Technology Dharwad (IIIT-DWD), India</dd>
-			  <dt><a >Swapnil Sontakke, </a></dt>
-             <dd>Research Scholar, Indian Institute of Information Technology Dharwad (IIIT-DWD), India</dd>
-			  <dt><a >Prashant Bannulmath, </a></dt>
-             <dd>Research Scholar, Indian Institute of Information Technology Dharwad (IIIT-DWD), India</dd>
-			  <dt><a >Rishith Sadashiv T N, </a></dt>
-             <dd>Research Scholar, Indian Institute of  Technology Dharwad, India</dd>
-			  <dt><a >Kumar Kaustubh, </a></dt>
-             <dd>Research Scholar, Indian Institute of Technology Dharwad, India</dd>
-			  <dt><a >Lokesh Kumar, </a></dt>
-             <dd>M.Tech Student, Indian Institute of Technology Dharwad, India</dd>
-			 <dt><a >Devesh Kumar, </a></dt>
-             <dd>B.Tech Student, Indian Institute of Technology Dharwad, India</dd>
+<!-- Footer -->
+<footer style="padding: 10px; background: #222; color: #fff; text-align:center;">
+    &copy; 2026 DISPLACE Challenge
+</footer>
 
-             
-     	 </dl>
-      
-         </div>
-      </div>
-</section> 
-
-<section id="faqs" style="padding: 10px 0 12px; background: #fff;">
-
-      <div class="row add-bottom">
-         <div class="twelve columns">
-            <hr>
-            
-            <h1>Frequently Asked Questions</h1>
-		 <dl class="lining" align="justify">
-             <dt><b>Q. Which programming languages can I use?</b></dt>
-             <br>
-             <dd> A. You are free to use any programming language you like. We will require you to submit the output decisions as a Rich Transcription Time Marked (RTTM) file for system evaluation. 
-             </dd>
-             
-             <dt><b>Q. How do I get the DISPLACE audio dataset?</b>
-             </dt>
-             <br>
-             <dd> A. It is simple - by registering for the challenge. Please see the registration section on this webpage (above).
-             </dd>
-			 
-             <dt><b>Q. Can I re-distribute the data?</b>
-             </dt>
-             <br>
-             <dd> A. No, you can not re-distribute the data even if you have participated in the challenge. However, you can use it for research purposes with proper citations
-             </dd>
-			 
-			 
-             <dt><b>Q. In which format, do I need to submit the output?</b>
-             </dt>
-             <br>
-             <dd> A. The output should be in the text file with the Rich Transcription Time Marked (RTTM) extension.  
-             </dd>			 
-			 
-			 
-			 
-
-	     <dt><b>Q. How do I submit my findings obtained by participating in this challenge to Interspeech 2024?</b>
-             </dt>
-             <br>
-             <dd>A. That's great! You can follow the Interspeech 2024 paper submission portal <a href ="https://www.interspeech2024.org/call-for-papers/ ">here</a>. Remember to select "DISPLACE Challenge” while uploading your paper there. 
-             </dd>			 
-     	  </dl>
-          <hr>
-         </div>
-      </div>
-</section> 
-
-<section id="contactus" style="padding: 10px 0 12px; background: #fff;">
-
-      <div class="row add-bottom">
-         <div class="twelve columns">
-            <h1>Contact Us</h1>
-             You have more questions? Feel free to contact us at:<p><a href="mailto:displace2024@gmail.com">displace2024@gmail.com</a>.</p>
-             
-          <hr>
-         </div>
-      </div>
-</section> 
-
-    <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-
-
-            <ul class="copyright">
-               <li>&copy; Copyright DISPLACE Challenge</li>
-            </ul>
-
-         </div>
-
-         <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/doubletaptogo.js"></script>
-   <script src="js/spin.js"></script>
-
-   <script src="js/init.js"></script>
+<!-- Scripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/init.js"></script>
 
 </body>
-
 </html>
