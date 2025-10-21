@@ -81,6 +81,53 @@
         text-align: center;
       }
 
+      .hero-image-section {
+        background: white;
+        padding: 3rem 2rem;
+        overflow: hidden;
+      }
+
+      .hero-image {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        object-fit: contain;
+      }
+
+      .hero-image-section .container {
+        max-width: 1200px;
+        padding: 0 2rem;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .hero-image-section {
+          padding: 2rem 1rem;
+        }
+
+        .hero-image {
+          border-radius: 8px;
+        }
+
+        .hero-image-section .container {
+          padding: 0 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-image-section {
+          padding: 1.5rem 0.5rem;
+        }
+
+        .hero-image {
+          border-radius: 6px;
+        }
+      }
+
       .hero-content {
         max-width: 900px;
         margin: 0 auto;
@@ -245,6 +292,16 @@
           <a href="#registration" class="btn btn-primary">Register Now</a>
           <a href="#overview" class="btn btn-secondary">Learn More</a>
         </div>
+      </div>
+    </section>
+
+    <section class="hero-image-section">
+      <div class="container">
+        <img
+          src="images/new_hero.png"
+          alt="DISPLACE Challenge Overview"
+          class="hero-image"
+        />
       </div>
     </section>
 
