@@ -1,357 +1,588 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISPLACE Challenge 2026</title>
-    <meta name="description" content="DISPLACE Challenge 2026 website">
-    <meta name="author" content="DISPLACE Team">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISPLACE 2026 Challenge</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+      :root {
+        --primary: #1e3a8a;
+        --primary-dark: #1e40af;
+        --accent: #f97316;
+        --text-dark: #1f2937;
+        --text-light: #6b7280;
+        --bg-light: #f9fafb;
+        --bg-card: #ffffff;
+        --border: #e5e7eb;
+      }
 
-    <!-- JS -->
-    <script src="js/modernizr.js"></script>
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+      nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
 
-</head>
-<body>
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-<!-- Header -->
-<header id="home">
-    <nav id="nav-wrap">
+      .logo {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
 
-        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-        <ul id="nav" class="nav">
-            <div class="img pull-left">
-              <img src="images/new_hero.png" max-width="100%" height="30" width="30">
-           </div> 
-           <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-           <li class="current"><a class="smoothscroll" href="#about">About</a></li>
-           <li class="current"><a class="smoothscroll" href="#timeline">Timeline</a></li>
-           <li class="current"><a class="smoothscroll" href="#challenges">Tracks</a></li>
-           <li class="current"><a class="smoothscroll" href="#register">Register</a></li>
-           <li class="current"><a class="smoothscroll" href="#resources">Resources</a></li>
-           <li class="current"><a class="smoothscroll" href="#database">Database</a></li>
-           <li class="current"><a class="smoothscroll" href="#organizers">Organizers</a></li>
-           <li class="current"><a class="smoothscroll" href="#faqs">FAQs</a></li>
-           <li class="current"><a class="smoothscroll" href="#contactus">Contact Us</a></li>
-        </ul> <!-- end #nav -->
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
 
-     </nav> <!-- end #nav-wrap --> 
-     
-     <div class="row banner">
-     </div>
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-weight: 500;
+        transition: color 0.3s;
+      }
 
-     <p class="scrolldown">
-        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-     </p>
-  </header> <!-- Header End -->
+      .nav-links a:hover {
+        color: var(--primary);
+      }
 
-<!-- Style Guide Section
-   ================================================== -->
-   <section id="Latest Updates" style="padding: 10px 0 12px; background: #fff;">
-    <div class="row add-bottom">
+      .hero {
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        color: white;
+        padding: 5rem 2rem;
+        text-align: center;
+      }
 
-       <div class="twelve columns">
-         
-          <p class="drop-cap"  align="justify">
-             
-             <h3> 
-                <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30">Welcome to <b style="font-size: 20px; color: blue;"> The Third DISPLACE Challenge @Interspeech 2026</b> <img src="images/party-popper-joypixels.gif" alt="Description of the image" width="30" height="30"> 
-                <br>We are looking forward to seeing everyone!
-             </h3>
-</section>
+      .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+      }
 
-<!-- About Section -->
-<section id="about" style="padding: 10px 0 12px; background: #fff;">
+      .hero h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
 
-    <div class="row add-bottom">
+      .hero p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.95;
+      }
 
-       <div class="twelve columns">
-          <hr>
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-          <h1>About</h1>
-          <p class="drop-cap"  align="justify">
-              <br>
-              India’s healthcare system serves a vast and linguistically diverse population, where doctor and health worker-patient 
-              interactions occur in several regional languages and dialects. Typically, these conversations take place between Accredited 
-              Social Health Activists (ASHAs) and health seekers. Such interactions often feature code-mixed regional or dialectal speech in natural, 
-              spontaneous, noisy settings. Existing technologies such as large language models (LLMs) are not optimized for understanding multilingual, 
-              multi-speaker medical conversations. This limits the healthcare applications of speech technologies, 
-              reduces documentation efficiency, and constrains the development of AI-powered tools for medical response generation.
-              The DISPLACE Challenge 2026 focuses on Speaker Diarization (SD), Language Understanding with specific focus on Topic Identification in 
-              medical conversations and Automatic Speech Recognition (ASR) in multi-dialect settings for Indian languages.   
+      .btn {
+        padding: 14px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        display: inline-block;
+      }
+
+      .btn-primary {
+        background: var(--accent);
+        color: white;
+        box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3);
+      }
+
+      .btn-primary:hover {
+        background: #ea580c;
+        transform: translateY(-2px);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 2px solid white;
+      }
+
+      .btn-secondary:hover {
+        background: white;
+        color: var(--primary);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+
+      .section-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: var(--primary);
+      }
+
+      .section-subtitle {
+        text-align: center;
+        color: var(--text-light);
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+      }
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .card {
+        background: var(--bg-card);
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+      }
+
+      .organizers {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .organizer {
+        text-align: center;
+        padding: 1.5rem;
+      }
+
+      .organizer-name {
+        font-weight: 700;
+        color: var(--primary);
+        margin-top: 1rem;
+        font-size: 1.1rem;
+      }
+
+      .organizer-title {
+        color: var(--text-light);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        background: var(--text-dark);
+        color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">DISPLACE 2026</div>
+        <ul class="nav-links">
+          <li><a href="#overview">About</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#tracks">Tracks</a></li>
+          <li><a href="#database">Database</a></li>
+          <li><a href="#registration">Register</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>DISPLACE 2026 Challenge</h1>
+        <p>
+          DIarization and Speech Processing for LAnguage understanding in
+          Conversational Environments
+        </p>
+        <p style="font-size: 1rem">
+          The Third DISPLACE Challenge @ INTERSPEECH 2026
+        </p>
+        <div class="cta-buttons">
+          <a href="#registration" class="btn btn-primary">Register Now</a>
+          <a href="#overview" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="container">
+      <h2 class="section-title">About the Challenge</h2>
+      <p class="section-subtitle">
+        Focusing on multilingual medical conversational speech between community
+        health workers and patients
       </p>
-       
-      <p  align="justify">  Summary of the DISPLACE Challenge 2024 -- DIarization of SPeaker and LAnguage in Conversational Environments <a href="https://www.isca-archive.org/interspeech_2024/kalluri24_interspeech.pdf"> (Click here</a> for full paper) has been accepted in Interspeech 2024.
-      
+      <p
+        style="
+          text-align: center;
+          max-width: 900px;
+          margin: 0 auto;
+          color: var(--text-light);
+          line-height: 1.8;
+        "
+      >
+        The DISPLACE 2026 challenge aims to advance diarization and speech
+        understanding technologies in real-world healthcare conversations. The
+        dataset includes multilingual, code-switched interactions between
+        Accredited Social Health Activists (ASHAs) and patients, representing
+        authentic primary healthcare settings.
       </p>
-       
-        <!-- <h5>
-            <ul class="lining" align="centre">
-              <a href="docs/DISPLACE2024_Flyer_v5.pdf"> Click here</a> to download the flyer.
-             </ul>
-        </h5> -->
+    </section>
+
+    <section id="timeline" style="background: var(--bg-light)">
+      <div class="container">
+        <h2 class="section-title">Important Dates</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <strong>21 Oct 2025</strong><br />Registration Opens
+          </div>
+          <div class="card">
+            <strong>20 Nov 2025</strong><br />Data Release (Development Set)
+          </div>
+          <div class="card">
+            <strong>20 Nov 2025</strong><br />Baseline System Release
+          </div>
+          <div class="card">
+            <strong>01 Jan 2026</strong><br />Leaderboard Active & Phase-I Data
+            Release
+          </div>
+          <div class="card">
+            <strong>15 Jan 2026</strong><br />Registration Closes
+          </div>
+          <div class="card">
+            <strong>14 Feb 2026</strong><br />Phase-I Evaluation Closes
+          </div>
+          <div class="card">
+            <strong>21 Feb 2026</strong><br />System Report Submission
+          </div>
+          <div class="card">
+            <strong>27 Feb 2026</strong><br />INTERSPEECH Paper Submission
+            Deadline
+          </div>
+          <div class="card">
+            <strong>11 Mar 2026</strong><br />INTERSPEECH Paper Update Deadline
+          </div>
+          <div class="card">
+            <strong>15 May 2026</strong><br />Phase-II Evaluation Opens and
+            Closes
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks" class="container">
+      <h2 class="section-title">Challenge Tracks</h2>
+      <p class="section-subtitle">Three core tracks for 2026</p>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Track 1 — Speaker Diarization (SD)</h3>
+          <p>
+            Determine “who spoke when” in code-mixed multilingual medical
+            dialogues with overlapping speech.
           </p>
-          <hr>
-          
-                    </div>
-      </div> <!-- Row End-->
-</section>
-
-<!-- Timeline Section -->
-<section id="timeline" style="padding: 10px 0 12px; background: #fff;">
-
-   <div class="row add-bottom">
-      <div class="twelve columns">
-         <hr>
-         <h1>Timeline </h1>
-          
-    <dl class="lining" align="justify">
-         <dt><b>Registrations Opens:</b></dt>
-          21 Oct 2025 &emsp;
-         
-         <dt>Data Release (Dev):</dt>
-          10 Nov 2025<br>
-         <dt>Baseline System Release:</dt>
-         20 Nov 2025 <br>
-         <dt>Leaderboard Active:</dt>
-         1 Jan 2026<br>			 	 
-         <dt>Phase-I Evaluation Data Release:</dt>
-          1 Jan 2026<br>
-         <dt>Registrations Closes:</dt>
-          15 Jan 2026<br>
-          <dt>Phase-I Evaluation Closes:</dt>
-          14 Feb 2026<br>
-          
-         <dt>System Report submission:</dt>
-         21 Feb 2026<br>
-         <dt>INTERSPEECH Paper Submission Deadline:</dt>
-          27 Feb 2026<br>
-         <dt>INTERSPEECH Paper Update Deadline:</dt>
-          11 Mar 2024<br>
-       
-         <dt>Phase-II Evaluation Opens:</dt>
-             15 May 2026 <br>
-              
-         <dt>Phase-II Evaluation Closes:</dt>
-            15 May 2026 <br>
-         
-
-
-       </dl>
-       
+        </div>
+        <div class="card">
+          <h3>Track 2 — Automatic Speech Recognition (ASR)</h3>
+          <p>
+            Transcribe multilingual, code-switched healthcare conversations
+            across dialects and noisy environments.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Track 3 — Topic Identification</h3>
+          <p>Identify conversation topics (e.g., maternal health, infection)</p>
+        </div>
+        <div class="card">
+          <h3>Track 4 — Summarization</h3>
+          <p>Produce concise medical dialogue summaries.</p>
+        </div>
       </div>
-   </div>
-</section> 
+    </section>
 
-<!-- Tracks Section -->
-<section id="challenges" style="padding: 10px 0 12px; background: #fff;">
-
-    <div class="row add-bottom">
-
-       <div class="twelve columns">
-          <hr>
-
-          <h1>Tracks</h1>
-          <p class="drop-cap custom-paragraph">This challenge organizes three tracks and you can participate in one, two, or even all of them.<br>
-             Track-1 is dedicated to speaker diarization (SD). <br>
-             Track-2 is exclusive for Automatic Speech Recognition (ASR).<br> 
-             Track-3 focuses on Topic Identification and medical dialogue summarization. </p>
-       <ul class="lining" align="justify">
-        <li>  You are encouraged to submit your experimental findings and observations to the DISPLACE-2026 Challenge at Interspeech 2026 for peer review and subsequent consideration for presentation (and publication) at the conference. For this, we require you to participate in one, two, or even all of the tracks.<li>
-        </ul>	 
-        <br>
-</section>
-
-<!-- Registration Section -->
-<section id="register" style="padding: 10px 0 12px; background: #fff;">
-   <div class="row add-bottom">
-      <div class="twelve columns">
-         <hr>
-
-         <h1>    Registration   </h1>
-         
-         Thank you for your interest! Below are two quick steps to complete your registration and get started with the challenge.
-          
-          <dl class="lining" align="justify">
-              <dt><b>Step-1:</b></dt><dd> One representative of the participating team should fill out the registration form. To fill the form: <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=l80Vb6f240Gyxa1Bk5dkdmVQspGdebJJvv8d_p-7I2JUODZGTFZKNVVNSEEwV1hYVllRVEwyS1A4TC4u">click here</a></dd>
-              <dt><b>Step-2:</b></dt><dd> Please send a signed <a href="https://displace2026.github.io/docs/Terms_and_Conditions_DISPLACE_2024.pdf">Terms & Conditions</a> (named as "Terms_and_Conditions_DISPLACE_2026_&ltteam_name&gt.pdf") document to us at <a href="displace2026@gmail.com">displace2026@gmail.com</a>.</dd>
-        
-    </dl>
-    After a quick verification from our side, we will confirm your registration and share dataset access details.
-    
+    <section id="database" style="background: var(--bg-light)">
+      <div class="container">
+        <h2 class="section-title">Database</h2>
+        <p class="section-subtitle">Multilingual medical dialogue corpus</p>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Corpus Composition</h3>
+            <p>
+              ~30 hours of real primary-healthcare interactions recorded between
+              community health workers (ASHAs) and patients in local clinics and
+              homes.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Languages & Code-Mixing</h3>
+            <p>
+              Hindi, Kannada naturally mixed across turns, reflecting true
+              multilingual usage.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Recording Setup</h3>
+            <p>
+              Single-channel 16 kHz 16-bit WAV recordings, far-field
+              microphones, real acoustic conditions, annotated for speaker
+              segments, language, and overlap.
+            </p>
+          </div>
+        </div>
       </div>
-   </div>
-</section> 
+    </section>
 
-<!-- Resources Section -->
-<section id="resources" style="padding: 10px 0 12px; background: #fff;">
-    <div class="row add-bottom">
-       <div class="twelve columns">
-
-          <hr>
-          <h1>    Resources   </h1>
-         
-           
-          <ul class="lining" align="justify">
-            <li>  Links to datasets, evaluation plan, and baseline systems will be updated here.<li>
-            </ul>
-</section>
-
-<!-- Database Section -->
-<section id="database" style="padding: 10px 0 12px; background: #fff;">
-  <div class="row add-bottom">
-    <div class="twelve columns">
-      <hr>
-      <h1>Database</h1>
-      <p class="drop-cap" align="justify">
-        The DISPLACE corpus has been collected in collaboration with an external vendor, who is responsible for on-ground data acquisition. The goal of this data collection exercise is to build a diverse, high-quality dataset to support the development and evaluation of AI models that can assist in healthcare tasks such as information extraction, summarization, and report generation. The recorded conversations involve interactions between Accredited Social Health Activists (ASHAs) or Auxiliary Nurse Midwives (ANMs) and health seekers. Furthermore, the conversations feature code-mixed regional and dialectal speech in naturalistic, noisy settings. The conversational data may include both structured questionnaire-based interactions and natural dialogues that are rich in health-related information.
-        <br><br>
-        The recorded conversations include speakers from different age groups and regions across India. Data is collected from various types of community touchpoints such as Primary Health Centres (PHCs), Home Visits, Health Camps and Anganwadi Kendras across various regions and dialects to ensure diversity in health contexts and participant demographics. Each recording ranges from 15 to 30 minutes, typically involving goal-oriented conversations between two participants - an ASHA worker and a health seeker, conversing in their native language, with natural instances of code-mixing in Indian English for medical terms. The conversations primarily focus on topics such as General Health and Constitutional Symptoms (e.g., weakness, fatigue, weight loss, low hemoglobin/blood loss), Women’s Health and Gynecological Issues (e.g., menstrual problems, pregnancy, family planning), Acute Illnesses and Infections (e.g., fever, cough, cold, typhoid, dengue), and Preventive Care and Diagnostics (e.g., routine check-ups, blood tests, ultrasounds).
-        <br><br>
-        All audio recordings are captured in mono using the built-in microphone of a mobile device. The recording format is WAV PCM, 16 kHz, 16-bit. Background sounds are limited to natural community noise (e.g., household, clinic, or outdoor environments) that does not obscure intelligibility.
-        <br><br>
-        Professional annotators are hired to label the data verbatim. All recordings are transcribed with timestamps and formatted in JSON. Annotations include speaker diarization, language tags (with allowance for code-mixing), and markers for overlapping speech or background noise. Each audio recording is accompanied by a metadata entry stored in an .xlsx file. The metadata includes anonymized speaker IDs, language spoken, demographic information, and technical details about the recording.
+    <section id="resources" class="container">
+      <h2 class="section-title">Resources & Baselines</h2>
+      <p class="section-subtitle">
+        Evaluation plan and baselines will be provided
       </p>
-      <hr>
-    </div>
-  </div>
-</section>
+      <p
+        style="
+          text-align: center;
+          color: var(--text-light);
+          max-width: 800px;
+          margin: 0 auto;
+        "
+      >
+        Links to datasets, evaluation metrics, and baseline systems will appear
+        here once released.
+      </p>
+    </section>
 
-<section id="organizers" style="padding: 10px 0 12px; background: #fff;">
+    <section id="registration" class="container">
+      <h2 class="section-title">Registration Process</h2>
+      <div style="max-width: 800px; margin: 3rem auto">
+        <div class="card" style="margin-bottom: 1.5rem">
+          <h3>Step 1 — Fill the Registration Form</h3>
+          <p>Provide team, affiliation, and track details.</p>
+          <a
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=l80Vb6f240Gyxa1Bk5dkdmVQspGdebJJvv8d_p-7I2JUODZGTFZKNVVNSEEwV1hYVllRVEwyS1A4TC4u"
+            class="btn btn-primary"
+            style="margin-top: 1rem"
+            >Register Here</a
+          >
+        </div>
+        <div class="card" style="margin-bottom: 1.5rem">
+          <h3>Step 2 — Sign Terms & Conditions</h3>
+          <p>
+            <a href="docs/Terms_and_Conditions.pdf" target="_blank">
+              Download</a
+            >
+            and email the signed Terms & Conditions to
+            <b>displace2026@gmail.com</b>.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Step 3 — Access Dataset & Baselines</h3>
+          <p>
+            After verification, you’ll receive credentials for the development
+            set and baselines.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="row add-bottom">
-       <div class="twelve columns">
-          <hr>
-          <h1>Organizers</h1>
-           
-       <dl class="lining" align="justify">
-      <dt><a href="https://in.linkedin.com/in/dhanya-e"> Dr. Dhanya E</a></dt>
-         <dd>Post Doctoral Researcher, Indian Institute of Science, Bangalore, India</dd>
-      <dt><a href="https://www.linkedin.com/in/ankita-meena-27000b220"> Ankita Meena</a></dt>
-         <dd>MTech student, Indian Institute of Science, Bangalore, India</dd>
-      <dt><a href="https://www.linkedin.com/in/victor-azad-0aa50b2bb"> Victor Azad</a></dt>
-         <dd>MTech student, Indian Institute of Science, Bangalore, India</dd>
-      <dt><a href="https://www.linkedin.com/in/manas-nanivadekar/"> Manas Sameer Nanivadekar</a></dt>
-         <dd>Research Intern, Indian Institute of Science, Bangalore, India</dd>
-      <dt><a href="https://in.linkedin.com/in/shareefbabu"> Dr. Kalluri Shareef Babu</a></dt>
-           <dd>Assistant Professor, School of Computer Science, UPES, Dehradun, Uttara Khand, India</dd>	
-      <dt><a href="https://www.linkedin.com/in/pratik-roy-chowdhuri-371759109/">Pratik Ranjan Roy Chowdhuri </a></dt>
-           <dd>Research Scholar, National Institute of Technology Karnataka, Surathkal, India</dd>
-      <dt><a href ="http://www.leap.ee.iisc.ac.in/sriram/">Prof. Sriram Ganapathy</a></dt>
-           <dd>Associate Professor, Indian Institute of Science, Bangalore, India</dd>
-      <dt><a href ="https://www.linkedin.com/in/deepu-vijayasenan-7b3a871">Prof. Deepu Vijayasenan</a></dt>
-           <dd>Professor, National Institute of Technology Karnataka Surathkal, India</dd>
-      <dt><a href=" https://www.linkedin.com/in/srikanthrajch/">Dr. Srikanth Raj Chetupalli</a></dt>
-           <dd>Assistant Professor, Indian Institute of Technology Bombay, Maharashtra, India</dd>
-        </dl>
-    
-       </div>
-    </div>
-</section> 
+    <section id="organizers" class="container">
+      <h2 class="section-title">Organizing Committee</h2>
+      <p class="section-subtitle">Meet the team behind DISPLACE 2026</p>
+      <div class="organizers">
+        <div class="organizer">
+          <div class="organizer-name">
+            <a href="http://www.leap.ee.iisc.ac.in/sriram/" target="_blank"
+              >Prof. Sriram Ganapathy</a
+            >
+          </div>
+          <div class="organizer-title">Associate Professor, IISc Bangalore</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/deepu-vijayasenan-7b3a871"
+              target="_blank"
+              >Prof. Deepu Vijayasenan</a
+            >
+          </div>
+          <div class="organizer-title">Professor, NITK Surathkal</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a href="https://www.linkedin.com/in/srikanthrajch/" target="_blank"
+              >Dr. Srikanth Raj Chetupalli</a
+            >
+          </div>
+          <div class="organizer-title">Assistant Professor, IIT Bombay</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a href="https://in.linkedin.com/in/shareefbabu" target="_blank"
+              >Dr. Kalluri Shareef Babu</a
+            >
+          </div>
+          <div class="organizer-title">Assistant Professor, UPES Dehradun</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/chitralekha-bhat-3a511133"
+              target="_blank"
+              >Dr. Chitralekha Bhat</a
+            >
+          </div>
+          <div class="organizer-title">Chief Engineering Manager, TANUH</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a href="https://in.linkedin.com/in/dhanya-e" target="_blank"
+              >Dr. Dhanya E</a
+            >
+          </div>
+          <div class="organizer-title">
+            Post Doctoral Researcher, IISc Bangalore
+          </div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/ankita-meena-27000b220"
+              target="_blank"
+              >Ankita Meena</a
+            >
+          </div>
+          <div class="organizer-title">M.Tech Student, IISc Bangalore</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/victor-azad-0aa50b2bb"
+              target="_blank"
+              >Victor Azad</a
+            >
+          </div>
+          <div class="organizer-title">M.Tech Student, IISc Bangalore</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/manas-nanivadekar/"
+              target="_blank"
+              >Manas Sameer Nanivadekar</a
+            >
+          </div>
+          <div class="organizer-title">Research Intern, IISc Bangalore</div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/pratik-roy-chowdhuri-371759109/"
+              target="_blank"
+              >Pratik Ranjan Roy Chowdhuri</a
+            >
+          </div>
+          <div class="organizer-title">Research Scholar, NITK Surathkal</div>
+        </div>
+      </div>
+    </section>
 
-<!-- FAQs Section -->
-<section id="faqs" style="padding: 10px 0 12px; background: #fff;">
+    <section id="faq" style="background: var(--bg-light)">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Which languages can I use for development?</h3>
+            <p>
+              Any language is allowed; outputs must be Rich Transcription Time
+              Marked (RTTM) files for evaluation.
+            </p>
+          </div>
+          <div class="card">
+            <h3>How do I get the DISPLACE dataset?</h3>
+            <p>
+              Register for the challenge and send the signed agreement to
+              displace2026@gmail.com to receive access credentials.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Can I share or redistribute the data?</h3>
+            <p>
+              No, redistribution is prohibited. You may use it for research with
+              proper citation.
+            </p>
+          </div>
+          <div class="card">
+            <h3>In which format should I submit outputs?</h3>
+            <p>
+              Submit RTTM text files with diarization or recognition outputs per
+              the evaluation plan.
+            </p>
+          </div>
+          <div class="card">
+            <h3>How can I submit my work to INTERSPEECH 2026?</h3>
+            <p>
+              Follow the INTERSPEECH 2026 paper submission portal and select
+              “DISPLACE Challenge” when uploading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="row add-bottom">
-       <div class="twelve columns">
-          <hr>
-          
-          <h1>Frequently Asked Questions</h1>
-       <dl class="lining" align="justify">
-           <dt><b>Q. Which programming languages can I use?</b></dt>
-           <br>
-           <dd> A. You are free to use any programming language you like. We will require you to submit the output decisions as a Rich Transcription Time Marked (RTTM) file for system evaluation. 
-           </dd>
-           
-           <dt><b>Q. How do I get the DISPLACE audio dataset?</b>
-           </dt>
-           <br>
-           <dd> A. It is simple - by registering for the challenge. Please see the registration section on this webpage (above).
-           </dd>
-           
-           <dt><b>Q. Can I re-distribute the data?</b>
-           </dt>
-           <br>
-           <dd> A. No, you can not re-distribute the data even if you have participated in the challenge. However, you can use it for research purposes with proper citations
-           </dd>
-           
-           
-           <dt><b>Q. In which format, do I need to submit the output?</b>
-           </dt>
-           <br>
-           <dd> A. The output should be in the text file with the Rich Transcription Time Marked (RTTM) extension.  
-           </dd>			 
-
-           <dt><b>Q. How do I submit my findings obtained by participating in this challenge to Interspeech 2024?</b>
-           </dt>
-           <br>
-           <dd>A. That's great! You can follow the Interspeech 2026 paper submission portal <a href ="https://www.interspeech2026.org/call-for-papers/ ">here</a>. Remember to select "DISPLACE Challenge” while uploading your paper there. 
-           </dd>			 
-         </dl>
-        <hr>
-       </div>
-    </div>
-</section> 
-
-
-<section id="contactus" style="padding: 10px 0 12px; background: #fff;">
-
-    <div class="row add-bottom">
-       <div class="twelve columns">
-          <h1>Contact Us</h1>
-           You have more questions? Feel free to contact us at:<p><a href="mailto:displace2026@gmail.com">displace2026@gmail.com</a>.</p>
-           
-        <hr>
-       </div>
-    </div>
-</section> 
-
-<!-- footer
-   ================================================== -->
-   <footer>
-
-    <div class="row">
-
-       <div class="twelve columns">
-
-
-
-          <ul class="copyright">
-             <li>&copy; Copyright DISPLACE Challenge</li>
-          </ul>
-
-       </div>
-
-       <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-    </div>
-
- </footer> <!-- Footer End-->
-
- <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/doubletaptogo.js"></script>
-   <script src="js/spin.js"></script>
-
-   <script src="js/init.js"></script>
-
-</body>
-
+    <footer>
+      <div class="footer-content">
+        <p>
+          Contact:
+          <a
+            href="mailto:displace2026@gmail.com"
+            style="color: white; text-decoration: underline"
+            >displace2026@gmail.com</a
+          >
+        </p>
+        <p style="margin-top: 1rem">
+          &copy; 2025 DISPLACE Challenge Team | Indian Institute of Science,
+          Bangalore
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
