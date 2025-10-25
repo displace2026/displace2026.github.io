@@ -229,26 +229,155 @@
 
       .organizers {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
         margin-top: 3rem;
       }
 
       .organizer {
-        text-align: center;
+        background: var(--bg-card);
+        border-radius: 12px;
         padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .organizer:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      }
+
+      .organizer-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 auto 1rem;
+        overflow: hidden;
+        background: linear-gradient(135deg, var(--primary) 0%, #3b82f6 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid var(--bg-light);
+      }
+
+      .organizer-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .organizer-placeholder {
+        color: white;
+        font-size: 48px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
       }
 
       .organizer-name {
         font-weight: 700;
-        color: var(--primary);
-        margin-top: 1rem;
+        margin-top: 0.75rem;
         font-size: 1.1rem;
+      }
+
+      .organizer-name a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .organizer-name a:hover {
+        color: var(--primary-dark);
       }
 
       .organizer-title {
         color: var(--text-light);
         font-size: 0.95rem;
+        margin-top: 0.5rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 768px) {
+        .organizers {
+          grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+          gap: 1.5rem;
+        }
+
+        .organizer {
+          padding: 1rem;
+        }
+
+        .organizer-image {
+          width: 100px;
+          height: 100px;
+        }
+
+        .organizer-name {
+          font-size: 1rem;
+        }
+
+        .organizer-title {
+          font-size: 0.85rem;
+        }
+      }
+
+      /* Partners Section Styles */
+      .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 3rem;
+        align-items: center;
+        justify-items: center;
+        margin-top: 3rem;
+      }
+
+      .partner-logo {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 120px;
+        width: 100%;
+        max-width: 220px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .partner-logo:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      }
+
+      .partner-logo img {
+        max-width: 100%;
+        max-height: 80px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        filter: grayscale(0);
+        transition: filter 0.3s;
+      }
+
+      .partner-logo:hover img {
+        filter: grayscale(0) contrast(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .partners-grid {
+          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+          gap: 1.5rem;
+        }
+
+        .partner-logo {
+          padding: 1rem;
+          min-height: 100px;
+        }
+
+        .partner-logo img {
+          max-height: 60px;
+        }
       }
 
       footer {
@@ -276,6 +405,7 @@
           <li><a href="#database">Database</a></li>
           <li><a href="#registration">Register</a></li>
           <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#partners">Partners</a></li>
           <li><a href="#faq">FAQs</a></li>
         </ul>
       </div>
@@ -304,6 +434,10 @@
       <p class="section-subtitle">
         Focusing on multilingual medical conversational speech between community
         health workers and patients
+      </p>
+      <p class="section-subtitle">
+        Download the
+        <a href="docs/displace2026_flyer.pdf" target="_blank">Flyer</a>
       </p>
       <section class="hero-image-section">
         <div class="container">
@@ -386,8 +520,8 @@
         <div class="card">
           <h3>Track 2 — Automatic Speech Recognition (ASR)</h3>
           <p>
-            Transcribe multilingual, code-mixed healthcare conversations
-            across dialects and noisy environments.
+            Transcribe multilingual, code-mixed healthcare conversations across
+            dialects and noisy environments.
           </p>
         </div>
         <div class="card">
@@ -410,13 +544,15 @@
             <h3>Corpus Composition</h3>
             <p>
               ~30 hours of real primary-healthcare interactions recorded between
-              community health workers (ASHAs) and patients in local clinics, homes and health camps.
+              community health workers (ASHAs) and patients in local clinics,
+              homes and health camps.
             </p>
           </div>
           <div class="card">
             <h3>Languages & Code-Mixing</h3>
             <p>
-              Hindi, English naturally mixed across turns, reflecting true medical multilingual usage.
+              Hindi, English naturally mixed across turns, reflecting true
+              medical multilingual usage.
             </p>
           </div>
           <div class="card">
@@ -465,8 +601,7 @@
         <div class="card" style="margin-bottom: 1.5rem">
           <h3>Step 2 — Sign Terms & Conditions</h3>
           <p>
-              Download
-            and email the signed Terms & Conditions to
+            Download and email the signed Terms & Conditions to
             <b>displace2026@gmail.com</b>.
           </p>
         </div>
@@ -485,6 +620,14 @@
       <p class="section-subtitle">Meet the team behind DISPLACE-M</p>
       <div class="organizers">
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/sriram-ganapathy.png"
+              alt="Prof. Sriram Ganapathy"
+            />
+            <!-- <span class="organizer-placeholder">SG</span> -->
+          </div>
           <div class="organizer-name">
             <a href="http://www.leap.ee.iisc.ac.in/sriram/" target="_blank"
               >Prof. Sriram Ganapathy</a
@@ -493,6 +636,14 @@
           <div class="organizer-title">Associate Professor, IISc Bangalore</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/deepu-vijayasenan.png"
+              alt="Prof. Deepu Vijayasenan"
+            />
+            <!-- <span class="organizer-placeholder">DV</span> -->
+          </div>
           <div class="organizer-name">
             <a
               href="https://www.linkedin.com/in/deepu-vijayasenan-7b3a871"
@@ -503,6 +654,14 @@
           <div class="organizer-title">Professor, NITK Surathkal</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/srikanth-raj.png"
+              alt="Dr. Srikanth Raj Chetupalli"
+            />
+            <!-- <span class="organizer-placeholder">SC</span> -->
+          </div>
           <div class="organizer-name">
             <a href="https://www.linkedin.com/in/srikanthrajch/" target="_blank"
               >Dr. Srikanth Raj Chetupalli</a
@@ -511,6 +670,14 @@
           <div class="organizer-title">Assistant Professor, IIT Bombay</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/shareef-babu.png"
+              alt="Dr. Kalluri Shareef Babu"
+            />
+            <!-- <span class="organizer-placeholder">KS</span> -->
+          </div>
           <div class="organizer-name">
             <a href="https://in.linkedin.com/in/shareefbabu" target="_blank"
               >Dr. Kalluri Shareef Babu</a
@@ -519,6 +686,14 @@
           <div class="organizer-title">Assistant Professor, UPES Dehradun</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/chitralekha-bhat.png"
+              alt="Dr. Chitralekha Bhat"
+            />
+            <!-- <span class="organizer-placeholder">CB</span> -->
+          </div>
           <div class="organizer-name">
             <a
               href="https://www.linkedin.com/in/chitralekha-bhat-3a511133"
@@ -529,6 +704,11 @@
           <div class="organizer-title">Chief Engineering Manager, TANUH</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img src="images/partners/dhanya-e.png" alt="Dr. Dhanya E" />
+            <!-- <span class="organizer-placeholder">DE</span> -->
+          </div>
           <div class="organizer-name">
             <a href="https://in.linkedin.com/in/dhanya-e" target="_blank"
               >Dr. Dhanya E</a
@@ -539,6 +719,11 @@
           </div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img src="images/partners/ankita.png" alt="Ankita Meena" />
+            <!-- <span class="organizer-placeholder">AM</span> -->
+          </div>
           <div class="organizer-name">
             <a
               href="https://www.linkedin.com/in/ankita-meena-27000b220"
@@ -549,6 +734,11 @@
           <div class="organizer-title">M.Tech Student, IISc Bangalore</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img src="images/partners/victor.png" alt="Victor Azad" />
+            <!-- <span class="organizer-placeholder">VA</span> -->
+          </div>
           <div class="organizer-name">
             <a
               href="https://www.linkedin.com/in/victor-azad-0aa50b2bb"
@@ -559,6 +749,14 @@
           <div class="organizer-title">M.Tech Student, IISc Bangalore</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/manas.png"
+              alt="Manas Sameer Nanivadekar"
+            />
+            <!-- <span class="organizer-placeholder">MN</span> -->
+          </div>
           <div class="organizer-name">
             <a
               href="https://www.linkedin.com/in/manas-nanivadekar/"
@@ -569,6 +767,14 @@
           <div class="organizer-title">Research Intern, IISc Bangalore</div>
         </div>
         <div class="organizer">
+          <div class="organizer-image">
+            <!-- Replace src with actual image URL -->
+            <img
+              src="images/partners/pratik-roy-chowdhuri.png"
+              alt="Pratik Ranjan Roy Chowdhuri"
+            />
+            <!-- <span class="organizer-placeholder">PR</span> -->
+          </div>
           <div class="organizer-name">
             <a
               href="https://www.linkedin.com/in/pratik-roy-chowdhuri-371759109/"
@@ -638,6 +844,7 @@
           &copy; 2026 DISPLACE Challenge Team | Indian Institute of Science,
           Bangalore
         </p>
+        <p style="margin-top: 1rem">In support with NLTM, MEITY, Bhashini</p>
       </div>
     </footer>
   </body>
