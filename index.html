@@ -439,7 +439,7 @@
 
     <!-- Announcement Banner -->
     <div class="announcement-banner">
-      <strong>7th Jan Data Released,</strong> Development Set!
+      <strong>7th Jan Data Released,</strong> Development Set
     </div>
 
     <section class="hero">
@@ -604,10 +604,28 @@
 
     <section id="resources" class="container">
       <h2 class="section-title">Resources & Baselines</h2>
-      <p class="section-subtitle">
+      <div style="text-align: center; max-width: 800px; margin: 2rem auto">
+        <div class="card" style="margin-bottom: 1.5rem">
+          <h3>Dataset Access</h3>
+          <p style="color: var(--text-light); margin-bottom: 1rem">
+            Access the DISPLACE-M dataset on Hugging Face
+          </p>
+          <a
+            href="https://huggingface.co/Displace-M"
+            target="_blank"
+            class="btn btn-primary"
+            >View Dataset on Hugging Face</a
+          >
+        </div>
+        <p style="color: var(--text-light)">
+          Additional links to evaluation metrics and baseline systems will
+          appear here once released.
+        </p>
+      </div>
+      <!-- <p class="section-subtitle">
         Evaluation plan and baselines will be provided
-      </p>
-      <p
+      </p> -->
+      <!-- <p
         style="
           text-align: center;
           color: var(--text-light);
@@ -617,7 +635,7 @@
       >
         Links to datasets, evaluation metrics, and baseline systems will appear
         here once released.
-      </p>
+      </p> -->
     </section>
 
     <section id="registration" class="container">
@@ -983,5 +1001,60 @@
         <p style="margin-top: 1rem">In support with NLTM-MeitY-Bhashini</p>
       </div>
     </footer>
+
+    <script>
+      // Carousel functionality
+      const track = document.getElementById("carouselTrack");
+      const dotsContainer = document.getElementById("carouselDots");
+      const slides = document.querySelectorAll(".carousel-slide");
+      let currentSlide = 0;
+      let autoRotateInterval;
+
+      // Create dots
+      slides.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("carousel-dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = document.querySelectorAll(".carousel-dot");
+
+      function goToSlide(index) {
+        currentSlide = index;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === currentSlide);
+        });
+
+        resetAutoRotate();
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        goToSlide(currentSlide);
+      }
+
+      function startAutoRotate() {
+        autoRotateInterval = setInterval(nextSlide, 4000);
+      }
+
+      function resetAutoRotate() {
+        clearInterval(autoRotateInterval);
+        startAutoRotate();
+      }
+
+      // Start auto-rotation
+      startAutoRotate();
+
+      // Pause on hover
+      const banner = document.querySelector(".announcement-banner");
+      banner.addEventListener("mouseenter", () =>
+        clearInterval(autoRotateInterval)
+      );
+      banner.addEventListener("mouseleave", startAutoRotate);
+    </script>
   </body>
 </html>
