@@ -392,6 +392,32 @@
           display: none;
         }
       }
+
+      /* Announcement Banner Styles */
+      .announcement-banner {
+        background: linear-gradient(90deg, #f97316 0%, #ea580c 100%);
+        color: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .announcement-banner strong {
+        font-weight: 600;
+        margin-right: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .announcement-banner {
+          height: 60px;
+          font-size: 0.9rem;
+          padding: 0 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -410,6 +436,11 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+      <strong>7th Jan Data Released,</strong> Development Set!
+    </div>
 
     <section class="hero">
       <div class="hero-content">
