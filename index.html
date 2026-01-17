@@ -227,6 +227,16 @@
         transform: translateY(-4px);
       }
 
+      .card.completed {
+        opacity: 0.6;
+        background: #f3f4f6;
+      }
+
+      .card.completed strong {
+        text-decoration: line-through;
+        color: var(--text-light);
+      }
+
       .organizers {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -506,13 +516,13 @@
       <div class="container">
         <h2 class="section-title">Important Dates</h2>
         <div class="cards-grid">
-          <div class="card">
+          <div class="card completed">
             <strong>21 Oct 2025</strong><br />Registration Opens
           </div>
-          <div class="card">
+          <div class="card completed">
             <strong>6 Jan 2026</strong><br />Data Release (Development Set)
           </div>
-          <div class="card">
+          <div class="card completed">
             <strong>8 Jan 2026</strong><br />Baseline System Release
           </div>
           <div class="card">
