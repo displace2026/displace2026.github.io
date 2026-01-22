@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -250,7 +250,9 @@
         padding: 1.5rem;
         text-align: center;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
       }
 
       .organizer:hover {
@@ -351,7 +353,9 @@
         min-height: 120px;
         width: 100%;
         max-width: 220px;
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
 
@@ -526,7 +530,7 @@
             <strong>8 Jan 2026</strong><br />Baseline System Release
           </div>
           <div class="card">
-            <strong>31 Jan 2026</strong><br />Leaderboard Active & Phase-I Data
+            <strong>1 Feb 2026</strong><br />Leaderboard Active & Phase-I Data
             Release
           </div>
           <div class="card">
@@ -546,8 +550,10 @@
             <strong>11 Mar 2026</strong><br />INTERSPEECH Paper Update Deadline
           </div> -->
           <div class="card">
-            <strong>15 March 2026</strong><br />Phase-II Evaluation Opens and
-            Closes
+            <strong>15 March 2026</strong><br />Phase-II Evaluation Opens
+          </div>
+          <div class="card">
+            <strong>20th March 2026</strong><br />Phase-II Evaluation Closes
           </div>
         </div>
       </div>
@@ -1076,7 +1082,7 @@
       // Pause on hover
       const banner = document.querySelector(".announcement-banner");
       banner.addEventListener("mouseenter", () =>
-        clearInterval(autoRotateInterval)
+        clearInterval(autoRotateInterval),
       );
       banner.addEventListener("mouseleave", startAutoRotate);
     </script>
